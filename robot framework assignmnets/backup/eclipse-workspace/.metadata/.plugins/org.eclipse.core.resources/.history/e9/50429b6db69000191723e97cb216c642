@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.0 on win32)" generated="20190616 21:14:02.561" rpa="false">
+<suite id="s1" name="Tabs Iframes" source="C:\Users\Gurunag.U\eclipse-workspace\tabs_iframes">
+<suite id="s1-s1" name="Testsuite" source="C:\Users\Gurunag.U\eclipse-workspace\tabs_iframes\testsuite">
+<suite id="s1-s1-s1" name="Tabs Iframes Testsuite" source="C:\Users\Gurunag.U\eclipse-workspace\tabs_iframes\testsuite\tabs_iframes_testsuite.robot">
+<kw name="Open The Browser" library="tabs_iframes_keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:03.958" level="INFO">Opening browser 'gc' to base url 'http://www.globalsqa.com/demo-site/frames-and-windows/#Open%20New%20Tab'.</msg>
+<status status="PASS" starttime="20190616 21:14:03.957" endtime="20190616 21:14:14.104"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190616 21:14:14.106" endtime="20190616 21:14:15.402"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" starttime="20190616 21:14:15.403" endtime="20190616 21:14:15.410"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:03.956" endtime="20190616 21:14:15.412"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="Frames Test Cases">
+<kw name="Verify Practice Automation Form" library="tabs_iframes_keywords">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls an element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${verify_locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190616 21:14:15.418" endtime="20190616 21:14:15.601"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${verify_locator}</arg>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" starttime="20190616 21:14:15.603" endtime="20190616 21:14:15.677"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${verify_locator}</arg>
+<arg>${text_to_be_located}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:15.758" level="INFO">Element 'xpath = //div[@class='page_heading']/h1' contains text 'Frames And Windows'.</msg>
+<status status="PASS" starttime="20190616 21:14:15.679" endtime="20190616 21:14:15.759"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:15.416" endtime="20190616 21:14:15.762"></status>
+</kw>
+<kw name="Select Iframe Tab" library="tabs_iframes_keywords">
+<kw name="Element Click" library="tabs_iframes_keywords">
+<arguments>
+<arg>${iframe_tab_locator}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${loc}</arg>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" starttime="20190616 21:14:15.767" endtime="20190616 21:14:15.847"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${loc}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:15.898" level="INFO">Element 'css = li[id='iFrame']' is displayed.</msg>
+<status status="PASS" starttime="20190616 21:14:15.848" endtime="20190616 21:14:15.899"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${loc}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:15.901" level="INFO">Clicking element 'css = li[id='iFrame']'.</msg>
+<status status="PASS" starttime="20190616 21:14:15.900" endtime="20190616 21:14:16.154"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:15.764" endtime="20190616 21:14:16.156"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:15.763" endtime="20190616 21:14:16.157"></status>
+</kw>
+<kw name="Frame and Email Enter" library="tabs_iframes_keywords">
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${frame1_loc}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:16.162" level="INFO">Selecting frame 'css = [name='globalSqa']'.</msg>
+<status status="PASS" starttime="20190616 21:14:16.161" endtime="20190616 21:14:16.340"></status>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<arguments>
+<arg>${frame2_loc}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:16.342" level="INFO">Selecting frame 'xpath = /html/body/div[1]/iframe'.</msg>
+<status status="PASS" starttime="20190616 21:14:16.341" endtime="20190616 21:14:16.424"></status>
+</kw>
+<kw name="Element Click" library="tabs_iframes_keywords">
+<arguments>
+<arg>${email_locator}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${loc}</arg>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" starttime="20190616 21:14:16.425" endtime="20190616 21:14:16.489"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${loc}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:16.538" level="INFO">Element 'xpath = //input[@id="custom_field_text_field_1016375"]' is displayed.</msg>
+<status status="PASS" starttime="20190616 21:14:16.490" endtime="20190616 21:14:16.539"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${loc}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:16.540" level="INFO">Clicking element 'xpath = //input[@id="custom_field_text_field_1016375"]'.</msg>
+<status status="PASS" starttime="20190616 21:14:16.539" endtime="20190616 21:14:16.834"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:16.424" endtime="20190616 21:14:16.835"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${email_locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190616 21:14:16.836" endtime="20190616 21:14:16.906"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${email_locator}</arg>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:16.908" level="INFO">Typing text 'test@test.com' into text field 'xpath = //input[@id="custom_field_text_field_1016375"]'.</msg>
+<status status="PASS" starttime="20190616 21:14:16.907" endtime="20190616 21:14:17.106"></status>
+</kw>
+<kw name="Element Click" library="tabs_iframes_keywords">
+<arguments>
+<arg>${subscribe_locator}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${loc}</arg>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" starttime="20190616 21:14:17.109" endtime="20190616 21:14:17.175"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${loc}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:17.213" level="INFO">Element 'css = input[type='submit']' is displayed.</msg>
+<status status="PASS" starttime="20190616 21:14:17.175" endtime="20190616 21:14:17.214"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${loc}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:17.215" level="INFO">Clicking element 'css = input[type='submit']'.</msg>
+<status status="PASS" starttime="20190616 21:14:17.214" endtime="20190616 21:14:17.489"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:17.107" endtime="20190616 21:14:17.490"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:16.158" endtime="20190616 21:14:17.491"></status>
+</kw>
+<kw name="verify Subscribe" library="tabs_iframes_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${subscribe_msg_locator}</arg>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" starttime="20190616 21:14:17.492" endtime="20190616 21:14:18.291"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${subscribe_msg_locator}</arg>
+<arg>${subscribed_msg}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:18.359" level="INFO">Element 'xpath = //div[@id='mailmunch-optin-form']/div[2]/div/p/strong' contains text 'Thank You For Subscribing!'.</msg>
+<status status="PASS" starttime="20190616 21:14:18.292" endtime="20190616 21:14:18.360"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:17.491" endtime="20190616 21:14:18.361"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:15.413" endtime="20190616 21:14:18.362" critical="yes"></status>
+</test>
+<kw name="close the browser" library="tabs_iframes_keywords" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<msg timestamp="20190616 21:14:28.368" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20190616 21:14:18.366" endtime="20190616 21:14:28.368"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190616 21:14:28.369" endtime="20190616 21:14:30.931"></status>
+</kw>
+<status status="PASS" starttime="20190616 21:14:18.365" endtime="20190616 21:14:30.932"></status>
+</kw>
+<doc>this file has the test cases of the table</doc>
+<status status="PASS" starttime="20190616 21:14:02.813" endtime="20190616 21:14:30.933"></status>
+</suite>
+<status status="PASS" starttime="20190616 21:14:02.807" endtime="20190616 21:14:30.941"></status>
+</suite>
+<status status="PASS" starttime="20190616 21:14:02.720" endtime="20190616 21:14:30.949"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Tabs Iframes">Tabs Iframes</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Testsuite">Tabs Iframes.Testsuite</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Tabs Iframes Testsuite">Tabs Iframes.Testsuite.Tabs Iframes Testsuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,10 @@
+*** Settings ***
+Documentation    this file has the test cases of the table 
+
+Suite Setup       Open The Browser
+ Suite Teardown    Closing The Browser
+
+Resource    ../keywords/OrangeHRM_user_Keywords.robot
+Resource    ../../login_assignment/login_assignment_resource.robot
+
+*** Test Cases ***

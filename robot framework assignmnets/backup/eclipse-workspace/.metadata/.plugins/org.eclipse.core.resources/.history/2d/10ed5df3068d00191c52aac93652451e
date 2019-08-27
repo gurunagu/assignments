@@ -1,0 +1,14 @@
+*** Settings ***
+Documentation    this file contains the test cases for the toolsQA website 
+
+Resource    ToolsQA_assignment_resource.robot
+*** Test Cases ***
+TestCases For The ToolsQA
+    Open Brower And Open Page
+    Verify Practice Automation Form
+    Verify Link Test
+    Year Of Experience
+    
+
+close the browser
+    Closing Browser

@@ -1,0 +1,12 @@
+*** Settings *** ***
+Documentation    this file contains the testcases of the project
+
+Resource    RFWSite_Keywords.robot
+
+*** Test Cases ***
+
+Test Cases 
+    Open Browser And Open Google
+    Search Robot Framework
+    Robot Framework Click Link
+    Move Till Seleneium Library

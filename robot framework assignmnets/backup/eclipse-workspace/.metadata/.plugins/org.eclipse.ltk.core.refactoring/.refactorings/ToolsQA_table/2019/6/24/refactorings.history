@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ToolsQA_table/variables/ToolsQA_table_resource.robot&apos; to &apos;ToolsQA_table_variables.robot&apos;" description="Rename resource &apos;ToolsQA_table_resource.robot&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="variables/ToolsQA_table_resource.robot" name="ToolsQA_table_variables.robot" stamp="1560509714395" updateReferences="true"/>
+</session>

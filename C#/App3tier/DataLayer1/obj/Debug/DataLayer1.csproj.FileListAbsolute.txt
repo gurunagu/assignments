@@ -1,0 +1,7 @@
+C:\Users\gurunag.u\Desktop\App3tier\DataLayer1\bin\Debug\DataLayer1.dll.config
+C:\Users\gurunag.u\Desktop\App3tier\DataLayer1\bin\Debug\DataLayer1.dll
+C:\Users\gurunag.u\Desktop\App3tier\DataLayer1\bin\Debug\DataLayer1.pdb
+C:\Users\gurunag.u\Desktop\App3tier\DataLayer1\obj\Debug\DataLayer1.csprojResolveAssemblyReference.cache
+C:\Users\gurunag.u\Desktop\App3tier\DataLayer1\obj\Debug\DataLayer1.csproj.CoreCompileInputs.cache
+C:\Users\gurunag.u\Desktop\App3tier\DataLayer1\obj\Debug\DataLayer1.dll
+C:\Users\gurunag.u\Desktop\App3tier\DataLayer1\obj\Debug\DataLayer1.pdb

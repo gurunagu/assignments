@@ -1,0 +1,5 @@
+C:\Users\gurunag.u\Desktop\demo\demo\bin\Debug\demo.exe
+C:\Users\gurunag.u\Desktop\demo\demo\bin\Debug\demo.pdb
+C:\Users\gurunag.u\Desktop\demo\demo\obj\Debug\demo.csprojResolveAssemblyReference.cache
+C:\Users\gurunag.u\Desktop\demo\demo\obj\Debug\demo.exe
+C:\Users\gurunag.u\Desktop\demo\demo\obj\Debug\demo.pdb

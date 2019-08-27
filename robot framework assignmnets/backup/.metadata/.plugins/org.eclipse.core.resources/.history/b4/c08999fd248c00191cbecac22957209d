@@ -1,0 +1,7 @@
+*** Settings ***
+Documentation    this file contains the test cases used from resource file
+resource    assignment_list_resource.robot
+*** Test Cases ***
+
+inserting into the list
+    insert to the list    ${list}    ${index}    ${number}

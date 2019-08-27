@@ -1,0 +1,23 @@
+*** Settings ***
+Documentation    this file contains the libraries and variables used in the project
+
+Library    SeleniumLibrary
+
+*** Variables ***
+
+${timeout}                        10s
+${Admin_option_locator}           xpath = //a[@id='menu_admin_viewAdminModule']/b
+${Users_Locator}                  //a[@id='menu_admin_viewSystemUsers']
+${add_user_locator}               css = input[id="btnAdd"]
+${user_role_loc}                  css = Select[id='systemUser_userType']
+${user_role_index}                1
+${employee_name_loc}              css = input[id='systemUser_employeeName_empName']
+${employeename}                   Maisie Williams MW
+${username_loc}                   css = input[id='systemUser_userName']
+${username}                       Gurunag
+${status_loc}                     css = Select[id='systemUser_status']
+${status_role_index}              0 
+${password_loc}                   css = input[id='systemUser_password'] 
+${password}                       Testing.123
+${confirm_password_loc}           css = input[id='systemUser_confirmPassword']
+${save_button_loc}                css = input[id='btnSave']

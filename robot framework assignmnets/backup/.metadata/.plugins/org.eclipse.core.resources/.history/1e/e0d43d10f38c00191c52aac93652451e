@@ -1,0 +1,16 @@
+*** Settings ***
+Documentation    this file contains the resources for testing of toolsqa website
+
+Library    SeleniumLibrary        
+
+*** Variables ***
+${url}    https://www.toolsqa.com/automation-practice-form/
+${browser}    gc
+
+
+*** Keywords ***
+Open Brower And Open Page
+    
+    Open Browser    ${url}    ${browser}
+    Maximize Browser Window
+        

@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.0 on win32)" generated="20190610 02:47:35.243" rpa="false">
+<suite id="s1" name="Keywords Demo" source="C:\Users\Gurunag.U\eclipse-workspace\keywords_demo">
+<suite id="s1-s1" name="Keywords Demo Testcases" source="C:\Users\Gurunag.U\eclipse-workspace\keywords_demo\keywords_demo_testcases.robot">
+<test id="s1-s1-t1" name="positional keyword implementation">
+<kw name="positional keywords" library="keywords_demo_resource">
+<arguments>
+<arg>redmi</arg>
+<arg>6pro</arg>
+<arg>android</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.408" endtime="20190610 02:47:35.409"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>brand:${brand}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.412" level="INFO">brand:6pro</msg>
+<status status="PASS" starttime="20190610 02:47:35.411" endtime="20190610 02:47:35.412"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.413" endtime="20190610 02:47:35.414"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.410" endtime="20190610 02:47:35.415"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>phone model:${phone_model}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.418" level="INFO">phone model:redmi</msg>
+<status status="PASS" starttime="20190610 02:47:35.417" endtime="20190610 02:47:35.418"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.419" endtime="20190610 02:47:35.420"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.415" endtime="20190610 02:47:35.420"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>os:${os}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.423" level="INFO">os:android</msg>
+<status status="PASS" starttime="20190610 02:47:35.422" endtime="20190610 02:47:35.424"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.424" endtime="20190610 02:47:35.426"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.421" endtime="20190610 02:47:35.426"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.406" endtime="20190610 02:47:35.427"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.405" endtime="20190610 02:47:35.428" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="default keywords implementation">
+<kw name="default keywords" library="keywords_demo_resource">
+<arguments>
+<arg>redmi</arg>
+<arg>6 pro</arg>
+</arguments>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>brand:${brand}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.433" level="INFO">brand:6 pro</msg>
+<status status="PASS" starttime="20190610 02:47:35.432" endtime="20190610 02:47:35.433"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.434" endtime="20190610 02:47:35.435"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.431" endtime="20190610 02:47:35.435"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>phone model:${phone_model}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.438" level="INFO">phone model:redmi</msg>
+<status status="PASS" starttime="20190610 02:47:35.437" endtime="20190610 02:47:35.438"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.439" endtime="20190610 02:47:35.440"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.436" endtime="20190610 02:47:35.440"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>os:${os}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.442" level="INFO">os:android</msg>
+<status status="PASS" starttime="20190610 02:47:35.442" endtime="20190610 02:47:35.443"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.443" endtime="20190610 02:47:35.444"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.441" endtime="20190610 02:47:35.445"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.430" endtime="20190610 02:47:35.445"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>\n</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.448" level="INFO">
+</msg>
+<status status="PASS" starttime="20190610 02:47:35.447" endtime="20190610 02:47:35.448"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.449" endtime="20190610 02:47:35.449"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.446" endtime="20190610 02:47:35.450"></status>
+</kw>
+<kw name="default keywords" library="keywords_demo_resource">
+<arguments>
+<arg>apple</arg>
+<arg>iphone X</arg>
+<arg>os=ios</arg>
+</arguments>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>brand:${brand}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.453" level="INFO">brand:iphone X</msg>
+<status status="PASS" starttime="20190610 02:47:35.453" endtime="20190610 02:47:35.454"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.454" endtime="20190610 02:47:35.455"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.452" endtime="20190610 02:47:35.456"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>phone model:${phone_model}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.458" level="INFO">phone model:apple</msg>
+<status status="PASS" starttime="20190610 02:47:35.457" endtime="20190610 02:47:35.459"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.460" endtime="20190610 02:47:35.460"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.456" endtime="20190610 02:47:35.461"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>os:${os}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.463" level="INFO">os:ios</msg>
+<status status="PASS" starttime="20190610 02:47:35.463" endtime="20190610 02:47:35.464"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.464" endtime="20190610 02:47:35.466"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.462" endtime="20190610 02:47:35.466"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.451" endtime="20190610 02:47:35.467"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.429" endtime="20190610 02:47:35.467" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="named keywords implementation">
+<kw name="named keywords" library="keywords_demo_resource">
+<arguments>
+<arg>A50</arg>
+</arguments>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>brand:${brand}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.472" level="INFO">brand:samsung</msg>
+<status status="PASS" starttime="20190610 02:47:35.471" endtime="20190610 02:47:35.473"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.473" endtime="20190610 02:47:35.474"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.470" endtime="20190610 02:47:35.475"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>phone model:${phone_model}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.477" level="INFO">phone model:A50</msg>
+<status status="PASS" starttime="20190610 02:47:35.476" endtime="20190610 02:47:35.477"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.478" endtime="20190610 02:47:35.479"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.475" endtime="20190610 02:47:35.480"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>os:${os}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.482" level="INFO">os:android</msg>
+<status status="PASS" starttime="20190610 02:47:35.481" endtime="20190610 02:47:35.482"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.483" endtime="20190610 02:47:35.484"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.480" endtime="20190610 02:47:35.484"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.469" endtime="20190610 02:47:35.485"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>\n</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.487" level="INFO">
+</msg>
+<status status="PASS" starttime="20190610 02:47:35.486" endtime="20190610 02:47:35.488"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.488" endtime="20190610 02:47:35.489"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.485" endtime="20190610 02:47:35.490"></status>
+</kw>
+<kw name="named keywords" library="keywords_demo_resource">
+<arguments>
+<arg>note 6 pro</arg>
+<arg>brand=redmi</arg>
+</arguments>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>brand:${brand}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.493" level="INFO">brand:redmi</msg>
+<status status="PASS" starttime="20190610 02:47:35.492" endtime="20190610 02:47:35.494"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.494" endtime="20190610 02:47:35.495"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.491" endtime="20190610 02:47:35.496"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>phone model:${phone_model}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.498" level="INFO">phone model:note 6 pro</msg>
+<status status="PASS" starttime="20190610 02:47:35.497" endtime="20190610 02:47:35.498"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.499" endtime="20190610 02:47:35.500"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.496" endtime="20190610 02:47:35.500"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>os:${os}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.503" level="INFO">os:android</msg>
+<status status="PASS" starttime="20190610 02:47:35.502" endtime="20190610 02:47:35.503"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.504" endtime="20190610 02:47:35.505"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.501" endtime="20190610 02:47:35.505"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.490" endtime="20190610 02:47:35.506"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>\n</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.508" level="INFO">
+</msg>
+<status status="PASS" starttime="20190610 02:47:35.507" endtime="20190610 02:47:35.508"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.509" endtime="20190610 02:47:35.510"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.506" endtime="20190610 02:47:35.510"></status>
+</kw>
+<kw name="named keywords" library="keywords_demo_resource">
+<arguments>
+<arg>iphone X</arg>
+<arg>brand=iphone</arg>
+<arg>os=ios</arg>
+</arguments>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>brand:${brand}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.515" level="INFO">brand:iphone</msg>
+<status status="PASS" starttime="20190610 02:47:35.514" endtime="20190610 02:47:35.515"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.515" endtime="20190610 02:47:35.516"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.513" endtime="20190610 02:47:35.517"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>phone model:${phone_model}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.519" level="INFO">phone model:iphone X</msg>
+<status status="PASS" starttime="20190610 02:47:35.519" endtime="20190610 02:47:35.519"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.520" endtime="20190610 02:47:35.521"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.517" endtime="20190610 02:47:35.521"></status>
+</kw>
+<kw name="print data" library="keywords_demo_resource">
+<arguments>
+<arg>os:${os}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190610 02:47:35.523" level="INFO">os:ios</msg>
+<status status="PASS" starttime="20190610 02:47:35.522" endtime="20190610 02:47:35.523"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<status status="PASS" starttime="20190610 02:47:35.523" endtime="20190610 02:47:35.524"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.521" endtime="20190610 02:47:35.525"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.511" endtime="20190610 02:47:35.525"></status>
+</kw>
+<status status="PASS" starttime="20190610 02:47:35.468" endtime="20190610 02:47:35.525" critical="yes"></status>
+</test>
+<doc>this file contains the test cases of the project.</doc>
+<status status="PASS" starttime="20190610 02:47:35.389" endtime="20190610 02:47:35.526"></status>
+</suite>
+<status status="PASS" starttime="20190610 02:47:35.316" endtime="20190610 02:47:35.529"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Keywords Demo">Keywords Demo</stat>
+<stat pass="3" fail="0" id="s1-s1" name="Keywords Demo Testcases">Keywords Demo.Keywords Demo Testcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

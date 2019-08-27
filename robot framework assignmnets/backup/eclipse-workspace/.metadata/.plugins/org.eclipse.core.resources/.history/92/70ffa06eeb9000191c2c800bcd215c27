@@ -1,0 +1,29 @@
+*** Settings ***
+Documentation    this file contains the testcases used in the project
+
+Suite Setup    Open The Browser
+Suite Teardown    Close The Browser
+Test Teardown    
+
+Resource    ../keywords/browser_control_keywords.robot
+
+*** Test Cases ***
+
+New Window Test Case
+    New Browser Window
+    [Teardown]    Close Window
+    
+New Message window Test Case
+    New Message Window
+    [Teardown]    Close Window
+    
+new tab test case
+    New Tab Window
+    [Teardown]    Close Window
+    
+Alert window
+    Alert
+    
+Link text test
+    Link Text Window
+    [Teardown]    Close Window

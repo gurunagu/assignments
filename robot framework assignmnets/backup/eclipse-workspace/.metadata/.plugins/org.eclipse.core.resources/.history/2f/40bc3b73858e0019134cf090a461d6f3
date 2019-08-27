@@ -1,0 +1,36 @@
+*** Settings ***
+Documentation    this file contains the keywords used in the project
+    
+Resource    ../variables/browser_control_variables.robot
+
+*** Keywords ***
+
+Open The Browser
+    Open Browser    ${url}   ${browser}
+    Maximize Browser Window
+    Set Browser Implicit Wait    5s
+
+Element Click
+    [Arguments]    ${loc}
+    Wait Until Element Is Visible    ${loc}
+    Element Should Be Visible        ${loc}
+    Click Element                    ${loc}    
+
+New Browser Window
+    Wait Until Element Is Visible    ${page_verify_locator}    
+    Element Click                    ${new_window_locator}      
+    Select Window                    ${new_window_title}
+    Maximize Browser Window
+    Element Should Be Visible        ${new_window_verify_loc}    
+    
+New Message Window
+    Select Window                    ${page_title}
+    Wait Until Element Is Visible    ${page_verify_locator}    
+    Element Click                    ${new_msg_window_loc} 
+    Select Window                    NEW
+    Maximize Browser Window
+    Element Should Be Visible        ${new_msg_window_verify_loc}   
+    
+Close The Browser
+    sleep    5s
+    close browser

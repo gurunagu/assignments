@@ -1,0 +1,18 @@
+*** Settings ***
+Documentation    this file contains the libraries and variables used in the project
+
+Library    SeleniumLibrary
+Library    Collections
+
+*** Variables ***
+${url}                            https://www.toolsqa.com/automation-practice-table/
+${browser}                        gc    
+${Country_locator}                xpath = //table[@class='tsc_table_s13']
+@{country_list}                   ${EMPTY}
+${country_column}                 2
+${Country_row_index_start}        2      
+${Country_row_index_end}          6    
+${Forth_row_locator}              xpath = //tbody/tr[4][@class='odd']
+@{row_list}                       ${EMPTY}
+${forth_row}                      5
+@{column_range}                   0    6

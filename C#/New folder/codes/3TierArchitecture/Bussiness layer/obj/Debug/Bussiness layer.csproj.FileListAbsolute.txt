@@ -1,0 +1,7 @@
+C:\Users\gurunag.u\Desktop\user interface\Bussiness layer\bin\Debug\Bussiness layer.dll
+C:\Users\gurunag.u\Desktop\user interface\Bussiness layer\bin\Debug\Bussiness layer.pdb
+C:\Users\gurunag.u\Desktop\user interface\Bussiness layer\bin\Debug\Data Layer.dll
+C:\Users\gurunag.u\Desktop\user interface\Bussiness layer\bin\Debug\Data Layer.pdb
+C:\Users\gurunag.u\Desktop\user interface\Bussiness layer\obj\Debug\Bussiness layer.csprojResolveAssemblyReference.cache
+C:\Users\gurunag.u\Desktop\user interface\Bussiness layer\obj\Debug\Bussiness layer.dll
+C:\Users\gurunag.u\Desktop\user interface\Bussiness layer\obj\Debug\Bussiness layer.pdb

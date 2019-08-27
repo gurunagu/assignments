@@ -1,0 +1,13 @@
+*** Settings ***
+Documentation    this file contains the variables used to test the browser windows
+
+Library    SeleniumLibrary    
+
+*** Variables ***
+
+${url}                            http://www.seleniumframework.com/Practiceform/
+${browser}                        gc
+${page_verify_locator}            xpath = //div[@class='wpb_wrapper']/h2
+${new_window_locator}             css = button[id='button1']
+${new_window_title}               Selenium Framework | Selenium, Cucumber, Ruby, Java et al.
+${new_window_verify_loc}          xpath = //strong[contains(text(),'Agile')]

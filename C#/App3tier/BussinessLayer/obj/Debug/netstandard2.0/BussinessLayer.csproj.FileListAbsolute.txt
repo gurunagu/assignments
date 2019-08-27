@@ -1,0 +1,13 @@
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\bin\Debug\netstandard2.0\BussinessLayer.deps.json
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\bin\Debug\netstandard2.0\BussinessLayer.dll
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\bin\Debug\netstandard2.0\BussinessLayer.pdb
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\bin\Debug\netstandard2.0\DataLayer1.dll
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\bin\Debug\netstandard2.0\DataLayer1.pdb
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\bin\Debug\netstandard2.0\DataLayer1.dll.config
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.AssemblyInfoInputs.cache
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.AssemblyInfo.cs
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.csproj.CopyComplete
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.dll
+C:\Users\gurunag.u\Desktop\App3tier\BussinessLayer\obj\Debug\netstandard2.0\BussinessLayer.pdb

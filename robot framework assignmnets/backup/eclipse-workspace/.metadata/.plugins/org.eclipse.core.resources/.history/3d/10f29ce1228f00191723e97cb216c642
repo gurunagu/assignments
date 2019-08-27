@@ -1,0 +1,9 @@
+*** Settings ***
+Documentation    this file has the test cases of the table 
+
+Suite Setup       Open The Browser
+Suite Teardown    Close Browser
+
+Resource    ../keywords/tabs_iframes_keywords.robot
+
+*** Test Cases ***

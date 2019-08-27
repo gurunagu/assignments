@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.0 on win32)" generated="20190614 05:56:55.207" rpa="false">
+<suite id="s1" name="ToolsQA table" source="C:\Users\Gurunag.U\eclipse-workspace\ToolsQA_table">
+<suite id="s1-s1" name="Testcases" source="C:\Users\Gurunag.U\eclipse-workspace\ToolsQA_table\testcases">
+<suite id="s1-s1-s1" name="ToolsQA table testsuite" source="C:\Users\Gurunag.U\eclipse-workspace\ToolsQA_table\testcases\ToolsQA_table_testsuite.robot">
+<kw name="Open The Browser" library="ToolsQA_table_keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190614 05:56:56.341" level="INFO">Opening browser 'gc' to base url 'https://www.toolsqa.com/automation-practice-table/'.</msg>
+<status status="PASS" starttime="20190614 05:56:56.340" endtime="20190614 05:57:02.590"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:02.591" endtime="20190614 05:57:02.598"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:56:56.339" endtime="20190614 05:57:02.599"></status>
+</kw>
+<test id="s1-s1-s1-t1" name="table test cases">
+<kw name="Country Col Values" library="ToolsQA_table_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:02.603" endtime="20190614 05:57:03.923"></status>
+</kw>
+<kw name="Remove From List" library="Collections">
+<doc>Removes and returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${country_list}</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:03.925" endtime="20190614 05:57:03.926"></status>
+</kw>
+<kw name="${index} IN RANGE [ @{Country_row_range} ]" type="for">
+<kw name="${index} = 2" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${index}</arg>
+<arg>${country_column}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:04.144" level="INFO">${res} = UAE</msg>
+<status status="PASS" starttime="20190614 05:57:03.929" endtime="20190614 05:57:04.145"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${country_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:04.146" endtime="20190614 05:57:04.148"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:03.928" endtime="20190614 05:57:04.148"></status>
+</kw>
+<kw name="${index} = 3" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${index}</arg>
+<arg>${country_column}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:04.323" level="INFO">${res} = Saudi Arabia</msg>
+<status status="PASS" starttime="20190614 05:57:04.150" endtime="20190614 05:57:04.324"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${country_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:04.325" endtime="20190614 05:57:04.328"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:04.149" endtime="20190614 05:57:04.329"></status>
+</kw>
+<kw name="${index} = 4" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${index}</arg>
+<arg>${country_column}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:04.531" level="INFO">${res} = Taiwan</msg>
+<status status="PASS" starttime="20190614 05:57:04.330" endtime="20190614 05:57:04.532"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${country_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:04.532" endtime="20190614 05:57:04.533"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:04.329" endtime="20190614 05:57:04.534"></status>
+</kw>
+<kw name="${index} = 5" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${index}</arg>
+<arg>${country_column}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:04.695" level="INFO">${res} = China</msg>
+<status status="PASS" starttime="20190614 05:57:04.535" endtime="20190614 05:57:04.695"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${country_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:04.697" endtime="20190614 05:57:04.699"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:04.534" endtime="20190614 05:57:04.700"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:03.927" endtime="20190614 05:57:04.700"></status>
+</kw>
+<kw name="Print" library="ToolsQA_table_keywords">
+<arguments>
+<arg>${country_list}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190614 05:57:04.704" level="INFO">['UAE', 'Saudi Arabia', 'Taiwan', 'China']</msg>
+<status status="PASS" starttime="20190614 05:57:04.703" endtime="20190614 05:57:04.705"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:04.705" endtime="20190614 05:57:04.707"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:04.701" endtime="20190614 05:57:04.707"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:02.602" endtime="20190614 05:57:04.708"></status>
+</kw>
+<kw name="4th Row Details" library="ToolsQA_table_keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:04.710" endtime="20190614 05:57:04.757"></status>
+</kw>
+<kw name="Remove From List" library="Collections">
+<doc>Removes and returns the value specified with an ``index`` from ``list``.</doc>
+<arguments>
+<arg>${row_list}</arg>
+<arg>0</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:04.758" endtime="20190614 05:57:04.760"></status>
+</kw>
+<kw name="${index} IN RANGE [ @{column_range} ]" type="for">
+<kw name="${index} = 1" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${forth_row}</arg>
+<arg>${index}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:04.906" level="INFO">${res} = Financial Center</msg>
+<status status="PASS" starttime="20190614 05:57:04.763" endtime="20190614 05:57:04.907"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${row_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:04.908" endtime="20190614 05:57:04.909"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:04.762" endtime="20190614 05:57:04.910"></status>
+</kw>
+<kw name="${index} = 2" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${forth_row}</arg>
+<arg>${index}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:05.048" level="INFO">${res} = China</msg>
+<status status="PASS" starttime="20190614 05:57:04.912" endtime="20190614 05:57:05.049"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${row_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:05.050" endtime="20190614 05:57:05.052"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:04.911" endtime="20190614 05:57:05.053"></status>
+</kw>
+<kw name="${index} = 3" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${forth_row}</arg>
+<arg>${index}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:05.207" level="INFO">${res} = Shanghai</msg>
+<status status="PASS" starttime="20190614 05:57:05.054" endtime="20190614 05:57:05.207"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${row_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:05.208" endtime="20190614 05:57:05.209"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:05.054" endtime="20190614 05:57:05.210"></status>
+</kw>
+<kw name="${index} = 4" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${forth_row}</arg>
+<arg>${index}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:05.366" level="INFO">${res} = 492m</msg>
+<status status="PASS" starttime="20190614 05:57:05.212" endtime="20190614 05:57:05.367"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${row_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:05.368" endtime="20190614 05:57:05.370"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:05.210" endtime="20190614 05:57:05.370"></status>
+</kw>
+<kw name="${index} = 5" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${forth_row}</arg>
+<arg>${index}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:05.527" level="INFO">${res} = 2008</msg>
+<status status="PASS" starttime="20190614 05:57:05.371" endtime="20190614 05:57:05.527"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${row_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:05.528" endtime="20190614 05:57:05.529"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:05.371" endtime="20190614 05:57:05.529"></status>
+</kw>
+<kw name="${index} = 6" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${forth_row}</arg>
+<arg>${index}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:05.671" level="INFO">${res} = 4</msg>
+<status status="PASS" starttime="20190614 05:57:05.530" endtime="20190614 05:57:05.671"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${row_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:05.672" endtime="20190614 05:57:05.674"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:05.529" endtime="20190614 05:57:05.675"></status>
+</kw>
+<kw name="${index} = 7" type="foritem">
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<doc>Returns contents of table cell.</doc>
+<arguments>
+<arg>${table_locator}</arg>
+<arg>${forth_row}</arg>
+<arg>${index}</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20190614 05:57:05.831" level="INFO">${res} = details</msg>
+<status status="PASS" starttime="20190614 05:57:05.677" endtime="20190614 05:57:05.831"></status>
+</kw>
+<kw name="Append To List" library="Collections">
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<arguments>
+<arg>${row_list}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:05.832" endtime="20190614 05:57:05.833"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:05.675" endtime="20190614 05:57:05.834"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:04.760" endtime="20190614 05:57:05.834"></status>
+</kw>
+<kw name="Print" library="ToolsQA_table_keywords">
+<arguments>
+<arg>${row_list}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${message}</arg>
+</arguments>
+<msg timestamp="20190614 05:57:05.838" level="INFO">['Financial Center', 'China', 'Shanghai', '492m', '2008', '4', 'details']</msg>
+<status status="PASS" starttime="20190614 05:57:05.837" endtime="20190614 05:57:05.838"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${message</arg>
+</arguments>
+<status status="PASS" starttime="20190614 05:57:05.839" endtime="20190614 05:57:05.840"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:05.835" endtime="20190614 05:57:05.841"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:04.709" endtime="20190614 05:57:05.842"></status>
+</kw>
+<status status="PASS" starttime="20190614 05:57:02.599" endtime="20190614 05:57:05.842" critical="yes"></status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190614 05:57:05.845" endtime="20190614 05:57:08.274"></status>
+</kw>
+<doc>this file has the test cases of the table</doc>
+<status status="PASS" starttime="20190614 05:56:55.431" endtime="20190614 05:57:08.275"></status>
+</suite>
+<status status="PASS" starttime="20190614 05:56:55.425" endtime="20190614 05:57:08.283"></status>
+</suite>
+<status status="PASS" starttime="20190614 05:56:55.330" endtime="20190614 05:57:08.288"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="ToolsQA table">ToolsQA table</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Testcases">ToolsQA table.Testcases</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="ToolsQA table testsuite">ToolsQA table.Testcases.ToolsQA table testsuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,17 @@
+*** Settings ***
+Library    SeleniumLibrary  
+
+*** Variables ***
+${url}                                https://www.toolsqa.com/automation-practice-form/
+${browser}                            gc  
+${pagetest_locator}                   css = [class='page-title-head hgroup'] h1
+${firstname_locator}                  css = input[name='firstname']
+${firstname}                          Gurunag
+${lastname_locator}                   css = input[name='lastname']
+${lastname}                           Sai
+${exp_radio_locator}                  css = label[for='exp']
+${exp_radio_value}                    exp
+${index}                              2
+${date_locator}                       css = input[id='datepicker']
+${date}                               13-06-2019
+${Automation_tester_loc}              css = input[value='Automation Tester']     

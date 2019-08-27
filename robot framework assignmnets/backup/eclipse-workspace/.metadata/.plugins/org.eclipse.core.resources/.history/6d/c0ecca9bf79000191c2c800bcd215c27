@@ -1,0 +1,11 @@
+*** Settings ***
+Documentation    this file contains all the test cases for the project
+
+Resource    ../Keywords/OrangeHRM_Employee_Keywords.robot
+Resource    ../Keywords/Custom_keywords.robot
+
+Suite Setup    Open Brower And Open Page
+Suite Teardown    close the browser
+
+*** Test Cases ***
+

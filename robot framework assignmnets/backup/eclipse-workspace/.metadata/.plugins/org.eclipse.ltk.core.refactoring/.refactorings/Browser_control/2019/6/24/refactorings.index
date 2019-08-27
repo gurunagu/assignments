@@ -1,0 +1,3 @@
+1560499576752	Move 'browser_control_keywords.robot' to 'keywords'
+1560499580004	Move 'Browser_control_testsuite.robot' to 'testsuite'
+1560499581857	Move 'browser_control_variables.robot' to 'variables'

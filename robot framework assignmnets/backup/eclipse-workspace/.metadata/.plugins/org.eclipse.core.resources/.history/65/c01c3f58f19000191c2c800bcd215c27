@@ -1,0 +1,14 @@
+*** Settings ***
+Documentation    This file contains all the variables and keywords used in the project
+
+    
+
+Resource    Custom_keywords.robot
+Resource    ../../login_assignment/login_assignment_resource.robot
+
+*** Variables ***
+
+
+
+
+***

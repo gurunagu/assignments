@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.robotframework.ide.tableditor.activePage./login_assignment/login_assignment_resource.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./assignment_list/assignment_list_resource.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./open_close_browser/open_and_close_browser.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./demo_strings/demo_strings_testcases.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./login_assignment/login_assignment_testsuite.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./ToolsQA_assignment/ToolsQA_assignment_resource.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./keywords_demo/keywords_demo_testcases.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./keywords_demo/keywords_demo_resource.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./demo_strings/demo_strings_resource.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./assignment_list/assignment_list_testsuite.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./assignment_dictionary/assignment_dictionary_testsuite.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./list_test/list_test_resource.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./demo_strings/demo_strings.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.project.editor.activePage.login_assignment">
+		<item value="LibrariesProjectConfigurationEditorPart" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./list_test/list_test_testsuite.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.project.editor.activePage.ToolsQA_assignment">
+		<item value="LibrariesProjectConfigurationEditorPart" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./assignment_dictionary/assignment_dictionary_resource.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./keywords_demo/keywords_demo.robot">
+		<item value="" key="activePage"/>
+	</section>
+	<section name="org.robotframework.ide.tableditor.activePage./ToolsQA_assignment/ToolsQA_assignment_testsuite.robot">
+		<item value="" key="activePage"/>
+	</section>
+</section>

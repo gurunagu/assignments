@@ -1,0 +1,16 @@
+*** Settings ***
+Documentation    this file contains the keywords used in th eproject
+
+Resource    ../variables/tabs_iframes_variables.robot
+
+*** Keywords ***
+
+Open The Browser
+    Open Browser    ${url}   ${browser}
+    Maximize Browser Window
+    Set Browser Implicit Wait    5s
+    
+Print
+    [Arguments]    ${message}
+    log    ${message}
+    Log To Console    ${message

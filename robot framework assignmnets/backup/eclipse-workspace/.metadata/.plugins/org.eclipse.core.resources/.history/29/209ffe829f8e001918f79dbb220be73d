@@ -1,0 +1,9 @@
+*** Settings ***
+Documentation    this file has the test cases of the table 
+
+Suite Setup    Open The Browser
+
+Resource    ../keywords/ToolsQA_table_keywords.robot
+*** Test Cases ***
+table test cases
+    Country Col Values

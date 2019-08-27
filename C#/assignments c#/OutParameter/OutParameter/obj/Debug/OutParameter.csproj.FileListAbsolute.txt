@@ -1,0 +1,7 @@
+C:\Users\gurunag.u\source\repos\OutParameter\OutParameter\bin\Debug\OutParameter.exe.config
+C:\Users\gurunag.u\source\repos\OutParameter\OutParameter\bin\Debug\OutParameter.exe
+C:\Users\gurunag.u\source\repos\OutParameter\OutParameter\bin\Debug\OutParameter.pdb
+C:\Users\gurunag.u\source\repos\OutParameter\OutParameter\obj\Debug\OutParameter.csprojAssemblyReference.cache
+C:\Users\gurunag.u\source\repos\OutParameter\OutParameter\obj\Debug\OutParameter.csproj.CoreCompileInputs.cache
+C:\Users\gurunag.u\source\repos\OutParameter\OutParameter\obj\Debug\OutParameter.exe
+C:\Users\gurunag.u\source\repos\OutParameter\OutParameter\obj\Debug\OutParameter.pdb

@@ -1,0 +1,11 @@
+C:\Users\gurunag.u\Desktop\user interface\user interface\bin\Debug\user interface.exe
+C:\Users\gurunag.u\Desktop\user interface\user interface\bin\Debug\user interface.pdb
+C:\Users\gurunag.u\Desktop\user interface\user interface\bin\Debug\Bussiness layer.dll
+C:\Users\gurunag.u\Desktop\user interface\user interface\bin\Debug\Data Layer.dll
+C:\Users\gurunag.u\Desktop\user interface\user interface\bin\Debug\Bussiness layer.pdb
+C:\Users\gurunag.u\Desktop\user interface\user interface\bin\Debug\Data Layer.pdb
+C:\Users\gurunag.u\Desktop\user interface\user interface\obj\Debug\user interface.csprojResolveAssemblyReference.cache
+C:\Users\gurunag.u\Desktop\user interface\user interface\obj\Debug\user interface.exe
+C:\Users\gurunag.u\Desktop\user interface\user interface\obj\Debug\user interface.pdb
+C:\Users\gurunag.u\Desktop\3TierArchitecture\user interface\obj\Debug\user interface.exe
+C:\Users\gurunag.u\Desktop\3TierArchitecture\user interface\obj\Debug\user interface.pdb

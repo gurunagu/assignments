@@ -1,0 +1,8 @@
+*** Settings ***
+Documentation    this file contains the libraries and variables used in the project
+
+Library    SeleniumLibrary
+
+*** Variables ***
+${url}                            http://www.globalsqa.com/demo-site/frames-and-windows/#Open%20New%20Tab
+${browser}                        gc 

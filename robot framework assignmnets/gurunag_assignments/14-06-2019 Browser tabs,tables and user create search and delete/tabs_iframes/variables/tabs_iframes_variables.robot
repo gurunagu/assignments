@@ -1,0 +1,19 @@
+*** Settings ***
+Documentation    this file contains the libraries and variables used in the project
+
+Library    SeleniumLibrary
+
+*** Variables ***
+${url}                            http://www.globalsqa.com/demo-site/frames-and-windows/#Open%20New%20Tab
+${browser}                        gc 
+${timeout}                        10s
+${verify_locator}                 xpath = //div[@class='page_heading']/h1
+${text_to_be_located}             Frames And Windows
+${iframe_tab_locator}             css = li[id='iFrame']
+${email}                          test@test.com
+${email_locator}                  xpath = //input[@id="custom_field_text_field_1016375"]
+${subscribe_locator}              css = input[type='submit']
+${frame1_loc}                     css = [name='globalSqa']
+${frame2_loc}                     xpath = /html/body/div[1]/iframe
+${subscribe_msg_locator}          xpath = //div[@id='mailmunch-optin-form']/div[2]/div/p/strong
+${subscribed_msg}                 Thank You For Subscribing!

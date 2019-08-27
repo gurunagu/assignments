@@ -1,0 +1,41 @@
+*** Settings ***
+Documentation    this file contains the libraries and variables used in the project
+
+Library    SeleniumLibrary
+Library    String    
+
+*** Variables ***
+${Random_index}                   10
+${alphanumeric}                   [LETTERS][NUMBERS]
+${timeout}                        10s
+${Admin_option_locator}           xpath = //a[@id='menu_admin_viewAdminModule']/b
+${user_management_loc}            xpath = //a[@id='menu_admin_UserManagement']
+${Users_Locator}                  //a[@id='menu_admin_viewSystemUsers']
+${add_user_locator}               css = input[id="btnAdd"]
+${user_role_loc}                  css = Select[id='systemUser_userType']
+${user_role_index}                1
+${employee_name_loc}              css = input[id='systemUser_employeeName_empName']
+${employeename}                   Jasmine Morgan
+${username_loc}                   css = input[id='systemUser_userName']
+${new_username}                   ${empty}
+${status_loc}                     css = Select[id='systemUser_status']
+${status_role_index}              0 
+${password_loc}                   css = input[id='systemUser_password'] 
+${new_password}                   ${empty}
+${confirm_password_loc}           css = input[id='systemUser_confirmPassword']
+${save_button_loc}                css = input[id='btnSave']
+${search_user_role_loc}           css=Select[id='searchSystemUser_userType']
+${search_user_role_index}         2
+${search_employee_name_loc}       css=input[id='searchSystemUser_employeeName_empName']
+${search_username_loc}            css=input[id='searchSystemUser_userName'] 
+${search_status_loc}              css=Select[id='searchSystemUser_status'] 
+${search_status_role_index}       1
+${search_button_loc}              css=input[id='searchBtn']
+${Search_value_in_table_loc}      xpath = //table[@id='resultTable']//td[2]/a
+${search_checkbox_locator}        xpath = //table[@class='table hover']/tbody/tr/td[1]/input
+${delete_button_loc}              css = input[name='btnDelete']
+${delete_ok_button_loc}           css = input[id='dialogDeleteBtn']
+
+
+
+

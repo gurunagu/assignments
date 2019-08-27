@@ -1,0 +1,21 @@
+*** Settings ***
+Documentation    this file contains the test cases of the dictionary data structure
+
+resource    assignment_dictionary_resource.robot
+
+*** Test Cases ***
+
+Testcases of dictionary
+    
+    Insert to dictionary    ${dictionary}    ${insert_key}     ${insert_value}      
+    Print    dictionary : ${dictionary}   
+    Delete from dictionary    ${dictionary}    ${delete_key}    
+    update value based on key    ${dictionary}    ${update_key}     ${update_value}    
+    count of key-value pairs    ${dictionary}
+    
+Search using keys dictionary cases
+    Search key    ${dictionary}    ${search_key}        
+    
+Search using values dictionary cases
+    Search value    ${dictionary}    ${search_value} 
+    

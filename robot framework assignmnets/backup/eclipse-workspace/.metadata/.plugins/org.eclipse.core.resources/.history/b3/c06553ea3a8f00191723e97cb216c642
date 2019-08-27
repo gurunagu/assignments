@@ -1,0 +1,42 @@
+*** Settings ***
+Documentation    this file contains the keywords used in th eproject
+
+Resource    ../variables/tabs_iframes_variables.robot
+
+*** Keywords ***
+
+Open The Browser
+    Open Browser    ${url}   ${browser}
+    Maximize Browser Window
+    Set Browser Implicit Wait    5s
+    
+Print
+    [Arguments]       ${message}
+    log               ${message}
+    Log To Console    ${message}
+    
+Verify Practice Automation Form
+    Scroll Element Into View         ${verify_locator}    
+    Wait Until Element Is Visible    ${verify_locator}      
+    Element Should Contain           ${verify_locator}     ${text_to_be_located}
+    
+Element Click
+    [Arguments]                      ${loc}
+    Wait Until Element Is Visible    ${loc}
+    Element Should Be Visible        ${loc}
+    Click Element                    ${loc}
+    
+Select Iframe Tab
+    Element Click    ${iframe_tab_locator}
+    
+Input Emailid
+    Select Frame          ${frame1_loc} 
+    Select Frame    	  ${frame2_loc}
+    Element Click         ${email_locator}
+    Clear Element Text    ${email_locator}
+    Input Text            ${email_locator}    ${email}
+    Element Click         ${subscribe_locator}
+    
+close the browser
+    Sleep     3s
+    Close Browser 

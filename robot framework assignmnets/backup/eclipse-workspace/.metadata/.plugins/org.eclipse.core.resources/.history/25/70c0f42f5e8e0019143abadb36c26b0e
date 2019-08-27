@@ -1,0 +1,20 @@
+*** Settings ***
+Documentation    this file contains the variables used in the project
+
+Library    SeleniumLibrary
+
+*** Variables ***
+
+${url}                        https://www.google.com/
+${browser}                    gc
+${google_search_locator}      css = input[name='q']
+${input_RFW}                  Robot Framework
+${search_button_locator}      css = input[class='gNO89b']
+${google_img_locator}         css = img[alt='Google']
+${RFW_link_locator}           css = h3[class='LC20lb']
+${RFW_img_locator}            xpath = //div[@class='navbar-brand']/img
+${libraries_locator}          xpath = //nav[@toggleable='md']/li[3]
+${external_locator}           css = a[id='__BVID__40____BV_tab_button__']
+${selenium_library_locator}   xpath = //div[@id="{tab.title}-standard"]/div[30]/a
+${github_locator}             css = svg[class='octicon octicon-mark-github text-white']
+${documentation_locator}      xpath = //article/p[4]/a[@rel='nofollow']

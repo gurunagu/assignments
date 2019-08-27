@@ -1,0 +1,11 @@
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\bin\Debug\netcoreapp2.0\BinaryAddition.deps.json
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\bin\Debug\netcoreapp2.0\BinaryAddition.runtimeconfig.json
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\bin\Debug\netcoreapp2.0\BinaryAddition.runtimeconfig.dev.json
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\bin\Debug\netcoreapp2.0\BinaryAddition.dll
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\bin\Debug\netcoreapp2.0\BinaryAddition.pdb
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\obj\Debug\netcoreapp2.0\BinaryAddition.csprojAssemblyReference.cache
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\obj\Debug\netcoreapp2.0\BinaryAddition.csproj.CoreCompileInputs.cache
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\obj\Debug\netcoreapp2.0\BinaryAddition.AssemblyInfoInputs.cache
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\obj\Debug\netcoreapp2.0\BinaryAddition.AssemblyInfo.cs
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\obj\Debug\netcoreapp2.0\BinaryAddition.dll
+c:\Users\gurunag.u\Desktop\New folder (2)\BinaryAddition\BinaryAddition\obj\Debug\netcoreapp2.0\BinaryAddition.pdb

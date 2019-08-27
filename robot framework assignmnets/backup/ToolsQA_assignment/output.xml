@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.0 on win32)" generated="20190612 05:54:03.506" rpa="false">
+<suite id="s1" name="ToolsQA assignment" source="C:\Users\Gurunag.U\eclipse-workspace\ToolsQA_assignment">
+<suite id="s1-s1" name="ToolsQA assignment testsuite" source="C:\Users\Gurunag.U\eclipse-workspace\ToolsQA_assignment\ToolsQA_assignment_testsuite.robot">
+<test id="s1-s1-t1" name="OPening the browser">
+<kw name="Open Brower And Open Page" library="ToolsQA_assignment_resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190612 05:54:04.406" level="INFO">Opening browser 'gc' to base url 'https://www.toolsqa.com/automation-practice-form/'.</msg>
+<status status="PASS" starttime="20190612 05:54:04.405" endtime="20190612 05:54:09.542"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190612 05:54:09.543" endtime="20190612 05:54:10.801"></status>
+</kw>
+<status status="PASS" starttime="20190612 05:54:04.403" endtime="20190612 05:54:10.802"></status>
+</kw>
+<status status="PASS" starttime="20190612 05:54:04.401" endtime="20190612 05:54:10.803" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Test Practice Automation Form">
+<kw name="Verify Practice Automation Form" library="ToolsQA_assignment_resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${verify_automationForm_locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190612 05:54:10.809" endtime="20190612 05:54:10.933"></status>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<arguments>
+<arg>${verify_automationForm_locator}</arg>
+<arg>${text_to_be_located}</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20190612 05:54:11.037" level="INFO">Element 'xpath = //div[@class='wpb_wrapper']/h1' contains text 'Practice Automation Form'.</msg>
+<msg timestamp="20190612 05:54:11.037" level="INFO">${result} = None</msg>
+<status status="PASS" starttime="20190612 05:54:10.934" endtime="20190612 05:54:11.037"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${result} == None</arg>
+<arg>Print</arg>
+<arg>'${text_to_be_located}' found in page</arg>
+</arguments>
+<kw name="Print" library="ToolsQA_assignment_resource">
+<arguments>
+<arg>'${text_to_be_located}' found in page</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<msg timestamp="20190612 05:54:11.042" level="INFO">
+'Practice Automation Form' found in page
+</msg>
+<status status="PASS" starttime="20190612 05:54:11.042" endtime="20190612 05:54:11.043"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190612 05:54:11.044" endtime="20190612 05:54:11.045"></status>
+</kw>
+<status status="PASS" starttime="20190612 05:54:11.040" endtime="20190612 05:54:11.045"></status>
+</kw>
+<status status="PASS" starttime="20190612 05:54:11.038" endtime="20190612 05:54:11.046"></status>
+</kw>
+<status status="PASS" starttime="20190612 05:54:10.808" endtime="20190612 05:54:11.046"></status>
+</kw>
+<status status="PASS" starttime="20190612 05:54:10.806" endtime="20190612 05:54:11.047" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="Test Linktest">
+<kw name="Verify Link Test" library="ToolsQA_assignment_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${linktest_locator}</arg>
+</arguments>
+<msg timestamp="20190612 05:54:11.052" level="INFO">Clicking element 'css = a[title='Automation Practice Table']&gt;strong'.</msg>
+<status status="PASS" starttime="20190612 05:54:11.052" endtime="20190612 05:54:12.754"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${linktestcheck_locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190612 05:54:13.736" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190612 05:54:13.703" endtime="20190612 05:54:13.736"></status>
+</kw>
+<msg timestamp="20190612 05:54:13.737" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190612 05:54:13.746" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190612 05:54:12.755" endtime="20190612 05:54:13.747"></status>
+</kw>
+<status status="FAIL" starttime="20190612 05:54:11.050" endtime="20190612 05:54:13.749"></status>
+</kw>
+<status status="FAIL" starttime="20190612 05:54:11.049" endtime="20190612 05:54:13.750" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</status>
+</test>
+<test id="s1-s1-t4" name="Test Radio Button">
+<kw name="Year Of Experience Radio Button" library="ToolsQA_assignment_resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${radiobutton_locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190612 05:54:13.766" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190612 05:54:13.758" endtime="20190612 05:54:13.766"></status>
+</kw>
+<msg timestamp="20190612 05:54:13.766" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190612 05:54:13.769" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190612 05:54:13.755" endtime="20190612 05:54:13.769"></status>
+</kw>
+<status status="FAIL" starttime="20190612 05:54:13.754" endtime="20190612 05:54:13.770"></status>
+</kw>
+<status status="FAIL" starttime="20190612 05:54:13.752" endtime="20190612 05:54:13.770" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</status>
+</test>
+<test id="s1-s1-t5" name="Test Check Box">
+<kw name="Automation Tools Check Box" library="ToolsQA_assignment_resource">
+<kw name="Generate A Single Integer" library="ToolsQA_assignment_resource">
+<arguments>
+<arg>${random_0-2}</arg>
+</arguments>
+<assign>
+<var>${num}</var>
+</assign>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>${length}</arg>
+<arg>${random}</arg>
+</arguments>
+<assign>
+<var>${num}</var>
+</assign>
+<msg timestamp="20190612 05:54:13.775" level="INFO">${num} = 0</msg>
+<status status="PASS" starttime="20190612 05:54:13.774" endtime="20190612 05:54:13.776"></status>
+</kw>
+<msg timestamp="20190612 05:54:13.777" level="INFO">${num} = 0</msg>
+<status status="PASS" starttime="20190612 05:54:13.773" endtime="20190612 05:54:13.777"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>css = input[id='tool-${num}']</arg>
+</arguments>
+<assign>
+<var>${automation_checkbox_loc}</var>
+</assign>
+<msg timestamp="20190612 05:54:13.779" level="INFO">${automation_checkbox_loc} = css = input[id='tool-0']</msg>
+<status status="PASS" starttime="20190612 05:54:13.778" endtime="20190612 05:54:13.779"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${automation_checkbox_loc}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190612 05:54:13.795" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190612 05:54:13.784" endtime="20190612 05:54:13.795"></status>
+</kw>
+<msg timestamp="20190612 05:54:13.796" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190612 05:54:13.799" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190612 05:54:13.780" endtime="20190612 05:54:13.799"></status>
+</kw>
+<status status="FAIL" starttime="20190612 05:54:13.772" endtime="20190612 05:54:13.800"></status>
+</kw>
+<status status="FAIL" starttime="20190612 05:54:13.771" endtime="20190612 05:54:13.800" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</status>
+</test>
+<test id="s1-s1-t6" name="Test Dropdown">
+<kw name="Select Random Field From Dropdown" library="ToolsQA_assignment_resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${dropdown_locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190612 05:54:13.822" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190612 05:54:13.809" endtime="20190612 05:54:13.823"></status>
+</kw>
+<msg timestamp="20190612 05:54:13.824" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190612 05:54:13.827" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190612 05:54:13.804" endtime="20190612 05:54:13.827"></status>
+</kw>
+<status status="FAIL" starttime="20190612 05:54:13.803" endtime="20190612 05:54:13.828"></status>
+</kw>
+<status status="FAIL" starttime="20190612 05:54:13.802" endtime="20190612 05:54:13.829" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</status>
+</test>
+<test id="s1-s1-t7" name="close the browser">
+<kw name="Closing Browser" library="ToolsQA_assignment_resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20190612 05:54:16.836" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20190612 05:54:13.834" endtime="20190612 05:54:16.836"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190612 05:54:16.837" endtime="20190612 05:54:19.023"></status>
+</kw>
+<status status="PASS" starttime="20190612 05:54:13.832" endtime="20190612 05:54:19.024"></status>
+</kw>
+<status status="PASS" starttime="20190612 05:54:13.831" endtime="20190612 05:54:19.025" critical="yes"></status>
+</test>
+<doc>this file contains the test cases for the toolsQA website</doc>
+<status status="FAIL" starttime="20190612 05:54:03.696" endtime="20190612 05:54:19.029"></status>
+</suite>
+<status status="FAIL" starttime="20190612 05:54:03.616" endtime="20190612 05:54:19.047"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="4">Critical Tests</stat>
+<stat pass="3" fail="4">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="4" id="s1" name="ToolsQA assignment">ToolsQA assignment</stat>
+<stat pass="3" fail="4" id="s1-s1" name="ToolsQA assignment testsuite">ToolsQA assignment.ToolsQA assignment testsuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190612 05:54:13.737" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190612 05:54:13.766" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190612 05:54:13.796" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190612 05:54:13.824" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+</errors>
+</robot>

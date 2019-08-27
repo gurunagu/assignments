@@ -1,0 +1,14 @@
+*** Settings ***
+Documentation    this file contains the keywords used in th eproject
+
+Resource    ../libraries/OrangeHRM_user_libraries.robot
+Resource    ../../login_assignment/login_assignment_resource.robot
+
+*** Keywords *** 
+    
+login to OrangeHRM
+    Verify The Login Page
+    Enter Username
+    Enter Password
+    click on signin button
+    Verify Logged In Page

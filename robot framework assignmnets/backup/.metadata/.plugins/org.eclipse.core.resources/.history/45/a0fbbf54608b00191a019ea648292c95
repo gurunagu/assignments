@@ -1,0 +1,11 @@
+*** Settings ***
+Documentation    this file contains the test cases of the project.
+resource     keywords_demo_resource.robot
+
+*** Test Cases ***
+
+positional keyword implementation
+    positional keywords    redmi    6pro    android
+    
+default keywords implementation
+    default keywords    redmi    6 pro   

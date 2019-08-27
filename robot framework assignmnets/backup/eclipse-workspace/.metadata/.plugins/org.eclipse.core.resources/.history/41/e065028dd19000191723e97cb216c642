@@ -1,0 +1,19 @@
+*** Settings ***
+Documentation    this file has the test cases of the user project 
+
+Suite Setup       Open Brower And Open Page
+Suite Teardown    Close The Browser
+
+Resource    ../keywords/OrangeHRM_user_Keywords.robot
+
+
+*** Test Cases ***
+
+OrangeHRM Test Cases
+    Login to OrangeHRM
+    Navigate to Users
+    Search The User
+    Navigate And Fill New User Form
+    Search The User
+    Delete The User
+    Search The User

@@ -1,0 +1,4 @@
+*** Settings ***
+Documentation    this file contains the resources that are used in the project.
+
+*** Variables ***

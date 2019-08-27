@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.0 on win32)" generated="20190611 20:56:04.190" rpa="false">
+<suite id="s1" name="Assignment Dictionary" source="C:\Users\Gurunag.U\eclipse-workspace\assignment_dictionary">
+<suite id="s1-s1" name="Assignment Dictionary Testsuite" source="C:\Users\Gurunag.U\eclipse-workspace\assignment_dictionary\assignment_dictionary_testsuite.robot">
+<test id="s1-s1-t1" name="Testcases of dictionary">
+<kw name="Insert To Dictionary" library="assignment_dictionary_resource">
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${dictionary}</arg>
+<arg>${insert_key}</arg>
+<arg>${insert_value}</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:56:04.411" endtime="20190611 20:56:04.412"></status>
+</kw>
+<kw name="Print" library="assignment_dictionary_resource">
+<arguments>
+<arg>After Inserting '${insert_key}'=${insert_value} : ${dictionary}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:56:04.417" level="INFO">
+After Inserting 'e'=104 : {'a': '100', 'b': '101', 'c': '102', 'd': '103', 'e': '104'}
+</msg>
+<status status="PASS" starttime="20190611 20:56:04.416" endtime="20190611 20:56:04.418"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:56:04.419" endtime="20190611 20:56:04.420"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.414" endtime="20190611 20:56:04.421"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.410" endtime="20190611 20:56:04.422"></status>
+</kw>
+<kw name="Print" library="assignment_dictionary_resource">
+<arguments>
+<arg>Dictionary : ${dictionary}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:56:04.425" level="INFO">
+Dictionary : {'a': '100', 'b': '101', 'c': '102', 'd': '103', 'e': '104'}
+</msg>
+<status status="PASS" starttime="20190611 20:56:04.424" endtime="20190611 20:56:04.425"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:56:04.426" endtime="20190611 20:56:04.427"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.423" endtime="20190611 20:56:04.428"></status>
+</kw>
+<kw name="Delete From Dictionary" library="assignment_dictionary_resource">
+<kw name="Remove From Dictionary" library="Collections">
+<doc>Removes the given ``keys`` from the ``dictionary``.</doc>
+<arguments>
+<arg>${dictionary}</arg>
+<arg>${delete_key}</arg>
+</arguments>
+<msg timestamp="20190611 20:56:04.432" level="INFO">Removed item with key 'c' and value '102'.</msg>
+<status status="PASS" starttime="20190611 20:56:04.430" endtime="20190611 20:56:04.432"></status>
+</kw>
+<kw name="Print" library="assignment_dictionary_resource">
+<arguments>
+<arg>After Deleting '${delete_key}' : ${dictionary}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:56:04.436" level="INFO">
+After Deleting 'c' : {'a': '100', 'b': '101', 'd': '103', 'e': '104'}
+</msg>
+<status status="PASS" starttime="20190611 20:56:04.435" endtime="20190611 20:56:04.437"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:56:04.437" endtime="20190611 20:56:04.439"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.433" endtime="20190611 20:56:04.439"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.428" endtime="20190611 20:56:04.440"></status>
+</kw>
+<kw name="Update Value Based On Key" library="assignment_dictionary_resource">
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${dictionary}</arg>
+<arg>${update_key}</arg>
+<arg>${update_value}</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:56:04.441" endtime="20190611 20:56:04.442"></status>
+</kw>
+<kw name="Print" library="assignment_dictionary_resource">
+<arguments>
+<arg>After Updating '${update_key}'=${update_value} : ${dictionary}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:56:04.445" level="INFO">
+After Updating 'a'=200 : {'a': '200', 'b': '101', 'd': '103', 'e': '104'}
+</msg>
+<status status="PASS" starttime="20190611 20:56:04.444" endtime="20190611 20:56:04.446"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:56:04.446" endtime="20190611 20:56:04.447"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.443" endtime="20190611 20:56:04.448"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.440" endtime="20190611 20:56:04.448"></status>
+</kw>
+<kw name="Count Of Key-Value Pairs" library="assignment_dictionary_resource">
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${dictionary}</arg>
+</arguments>
+<assign>
+<var>${count}</var>
+</assign>
+<msg timestamp="20190611 20:56:04.451" level="INFO">Length is 4</msg>
+<msg timestamp="20190611 20:56:04.451" level="INFO">${count} = 4</msg>
+<status status="PASS" starttime="20190611 20:56:04.450" endtime="20190611 20:56:04.451"></status>
+</kw>
+<kw name="Print" library="assignment_dictionary_resource">
+<arguments>
+<arg>Count of Key-Value Pairs in Dictionary : ${count}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:56:04.454" level="INFO">
+Count of Key-Value Pairs in Dictionary : 4
+</msg>
+<status status="PASS" starttime="20190611 20:56:04.453" endtime="20190611 20:56:04.454"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:56:04.455" endtime="20190611 20:56:04.456"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.452" endtime="20190611 20:56:04.456"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.449" endtime="20190611 20:56:04.457"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.409" endtime="20190611 20:56:04.458" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Search using keys dictionary cases">
+<kw name="Search Key" library="assignment_dictionary_resource">
+<kw name="Dictionary Should Contain Key" library="Collections">
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<arguments>
+<arg>${dictionary}</arg>
+<arg>${search_key}</arg>
+<arg>msg='${search_key}' key not found</arg>
+</arguments>
+<msg timestamp="20190611 20:56:04.462" level="FAIL">'f' key not found</msg>
+<status status="FAIL" starttime="20190611 20:56:04.461" endtime="20190611 20:56:04.463"></status>
+</kw>
+<status status="FAIL" starttime="20190611 20:56:04.460" endtime="20190611 20:56:04.463"></status>
+</kw>
+<status status="FAIL" starttime="20190611 20:56:04.459" endtime="20190611 20:56:04.464" critical="yes">'f' key not found</status>
+</test>
+<test id="s1-s1-t3" name="Search using values dictionary cases">
+<kw name="Search Value" library="assignment_dictionary_resource">
+<kw name="Dictionary Should Contain Value" library="Collections">
+<doc>Fails if ``value`` is not found from ``dictionary``.</doc>
+<arguments>
+<arg>${dictionary}</arg>
+<arg>${search_value}</arg>
+<arg>msg='${search_value}' value not found</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:56:04.468" endtime="20190611 20:56:04.469"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.467" endtime="20190611 20:56:04.470"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:56:04.465" endtime="20190611 20:56:04.471" critical="yes"></status>
+</test>
+<doc>this file contains the test cases of the dictionary data structure</doc>
+<status status="FAIL" starttime="20190611 20:56:04.368" endtime="20190611 20:56:04.473"></status>
+</suite>
+<status status="FAIL" starttime="20190611 20:56:04.291" endtime="20190611 20:56:04.478"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1">Critical Tests</stat>
+<stat pass="2" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="1" id="s1" name="Assignment Dictionary">Assignment Dictionary</stat>
+<stat pass="2" fail="1" id="s1-s1" name="Assignment Dictionary Testsuite">Assignment Dictionary.Assignment Dictionary Testsuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

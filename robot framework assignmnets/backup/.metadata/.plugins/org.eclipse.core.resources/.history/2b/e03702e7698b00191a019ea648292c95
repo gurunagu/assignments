@@ -1,0 +1,7 @@
+*** Settings ***
+documentation    this file contains the test cases based on string resouce file
+resource    demo_strings_resource.robot
+
+*** Test Cases ***
+lowercase
+    to lowercase

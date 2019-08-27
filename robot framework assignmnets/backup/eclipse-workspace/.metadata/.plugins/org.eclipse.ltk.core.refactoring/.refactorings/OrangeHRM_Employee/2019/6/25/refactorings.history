@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;OrangeHRM_Employee/Keywords/Shared_resources.robot&apos; to &apos;Custom_keywords.robot&apos;" description="Rename resource &apos;Shared_resources.robot&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Keywords/Shared_resources.robot" name="Custom_keywords.robot" stamp="1560768536934" updateReferences="true"/>
+</session>

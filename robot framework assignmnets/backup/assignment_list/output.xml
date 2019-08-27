@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.0 on win32)" generated="20190611 20:54:16.932" rpa="false">
+<suite id="s1" name="Assignment List" source="C:\Users\Gurunag.U\eclipse-workspace\assignment_list">
+<suite id="s1-s1" name="Assignment List Testsuite" source="C:\Users\Gurunag.U\eclipse-workspace\assignment_list\assignment_list_testsuite.robot">
+<test id="s1-s1-t1" name="Testcases of lists">
+<kw name="Insert To The List" library="assignment_list_resource">
+<kw name="Insert Into List" library="Collections">
+<doc>Inserts ``value`` into ``list`` to the position specified with ``index``.</doc>
+<arguments>
+<arg>${test_list}</arg>
+<arg>${index}</arg>
+<arg>${number}</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.143" endtime="20190611 20:54:17.145"></status>
+</kw>
+<kw name="Print" library="assignment_list_resource">
+<arguments>
+<arg>value ${number} inserted into list</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:54:17.148" level="INFO">
+value 95 inserted into list
+</msg>
+<status status="PASS" starttime="20190611 20:54:17.147" endtime="20190611 20:54:17.148"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.149" endtime="20190611 20:54:17.150"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.145" endtime="20190611 20:54:17.151"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.142" endtime="20190611 20:54:17.151"></status>
+</kw>
+<kw name="Print" library="assignment_list_resource">
+<arguments>
+<arg>${test_list}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:54:17.154" level="INFO">
+['99', '95', '98', '97', '96']
+</msg>
+<status status="PASS" starttime="20190611 20:54:17.153" endtime="20190611 20:54:17.155"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.155" endtime="20190611 20:54:17.157"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.152" endtime="20190611 20:54:17.157"></status>
+</kw>
+<kw name="Search From List" library="assignment_list_resource">
+<kw name="Get Index From List" library="Collections">
+<doc>Returns the index of the first occurrence of the ``value`` on the list.</doc>
+<arguments>
+<arg>${test_list}</arg>
+<arg>${search_number}</arg>
+</arguments>
+<assign>
+<var>${index}</var>
+</assign>
+<msg timestamp="20190611 20:54:17.160" level="INFO">${index} = -1</msg>
+<status status="PASS" starttime="20190611 20:54:17.159" endtime="20190611 20:54:17.161"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${index} != -1</arg>
+<arg>Print</arg>
+<arg>value ${search_number} found in list</arg>
+<arg>ELSE</arg>
+<arg>Print</arg>
+<arg>value ${search_number} not found in list</arg>
+</arguments>
+<kw name="Print" library="assignment_list_resource">
+<arguments>
+<arg>value ${search_number} not found in list</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:54:17.165" level="INFO">
+value 91 not found in list
+</msg>
+<status status="PASS" starttime="20190611 20:54:17.164" endtime="20190611 20:54:17.166"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.167" endtime="20190611 20:54:17.168"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.163" endtime="20190611 20:54:17.169"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.161" endtime="20190611 20:54:17.169"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.158" endtime="20190611 20:54:17.170"></status>
+</kw>
+<kw name="Remove The Value From List" library="assignment_list_resource">
+<kw name="Get Index From List" library="Collections">
+<doc>Returns the index of the first occurrence of the ``value`` on the list.</doc>
+<arguments>
+<arg>${test_list}</arg>
+<arg>${delete_number}</arg>
+</arguments>
+<assign>
+<var>${index}</var>
+</assign>
+<msg timestamp="20190611 20:54:17.173" level="INFO">${index} = 3</msg>
+<status status="PASS" starttime="20190611 20:54:17.171" endtime="20190611 20:54:17.173"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${index} != -1</arg>
+<arg>Remove Values From List</arg>
+<arg>${test_list}</arg>
+<arg>${delete_number}</arg>
+<arg>ELSE</arg>
+<arg>Print</arg>
+<arg>${delete_number} not found in list</arg>
+</arguments>
+<kw name="Remove Values From List" library="Collections">
+<doc>Removes all occurrences of given ``values`` from ``list``.</doc>
+<arguments>
+<arg>${test_list}</arg>
+<arg>${delete_number}</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.175" endtime="20190611 20:54:17.176"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.174" endtime="20190611 20:54:17.177"></status>
+</kw>
+<kw name="Print" library="assignment_list_resource">
+<arguments>
+<arg>list after removing:${test_list}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:54:17.180" level="INFO">
+list after removing:['99', '95', '98', '96']
+</msg>
+<status status="PASS" starttime="20190611 20:54:17.179" endtime="20190611 20:54:17.180"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.181" endtime="20190611 20:54:17.182"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.177" endtime="20190611 20:54:17.183"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.170" endtime="20190611 20:54:17.183"></status>
+</kw>
+<kw name="Count Of A Particular Item" library="assignment_list_resource">
+<kw name="Count Values In List" library="Collections">
+<doc>Returns the number of occurrences of the given ``value`` in ``list``.</doc>
+<arguments>
+<arg>${test_list}</arg>
+<arg>${count_number}</arg>
+</arguments>
+<assign>
+<var>${count}</var>
+</assign>
+<msg timestamp="20190611 20:54:17.186" level="INFO">${count} = 1</msg>
+<status status="PASS" starttime="20190611 20:54:17.185" endtime="20190611 20:54:17.187"></status>
+</kw>
+<kw name="Print" library="assignment_list_resource">
+<arguments>
+<arg>count of ${countnumber} : ${count}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:54:17.190" level="INFO">
+count of 99 : 1
+</msg>
+<status status="PASS" starttime="20190611 20:54:17.189" endtime="20190611 20:54:17.190"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.192" endtime="20190611 20:54:17.193"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.187" endtime="20190611 20:54:17.193"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.184" endtime="20190611 20:54:17.194"></status>
+</kw>
+<kw name="Total Count Of Items" library="assignment_list_resource">
+<kw name="Get Length" library="BuiltIn">
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<arguments>
+<arg>${test_list}</arg>
+</arguments>
+<assign>
+<var>${count}</var>
+</assign>
+<msg timestamp="20190611 20:54:17.197" level="INFO">Length is 4</msg>
+<msg timestamp="20190611 20:54:17.198" level="INFO">${count} = 4</msg>
+<status status="PASS" starttime="20190611 20:54:17.196" endtime="20190611 20:54:17.198"></status>
+</kw>
+<kw name="Print" library="assignment_list_resource">
+<arguments>
+<arg>total count of items : ${count}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:54:17.201" level="INFO">
+total count of items : 4
+</msg>
+<status status="PASS" starttime="20190611 20:54:17.200" endtime="20190611 20:54:17.202"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.202" endtime="20190611 20:54:17.204"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.199" endtime="20190611 20:54:17.204"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.195" endtime="20190611 20:54:17.205"></status>
+</kw>
+<kw name="Update Item" library="assignment_list_resource">
+<kw name="Set List Value" library="Collections">
+<doc>Sets the value of ``list`` specified by ``index`` to the given ``value``.</doc>
+<arguments>
+<arg>${test_list}</arg>
+<arg>${index}</arg>
+<arg>${replace_number}</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.206" endtime="20190611 20:54:17.207"></status>
+</kw>
+<kw name="Print" library="assignment_list_resource">
+<arguments>
+<arg>replacing 95 as 100 : ${test_list}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<msg timestamp="20190611 20:54:17.210" level="INFO">
+replacing 95 as 100 : ['99', '100', '98', '96']
+</msg>
+<status status="PASS" starttime="20190611 20:54:17.209" endtime="20190611 20:54:17.210"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n ${item}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190611 20:54:17.211" endtime="20190611 20:54:17.212"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.208" endtime="20190611 20:54:17.213"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.205" endtime="20190611 20:54:17.214"></status>
+</kw>
+<status status="PASS" starttime="20190611 20:54:17.140" endtime="20190611 20:54:17.215" critical="yes"></status>
+</test>
+<doc>this file contains the test cases used from resource file</doc>
+<status status="PASS" starttime="20190611 20:54:17.097" endtime="20190611 20:54:17.217"></status>
+</suite>
+<status status="PASS" starttime="20190611 20:54:17.022" endtime="20190611 20:54:17.224"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Assignment List">Assignment List</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Assignment List Testsuite">Assignment List.Assignment List Testsuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,49 @@
+*** Settings ***
+Documentation    this file contains the resources of the list data structure
+
+library    Collections    
+
+*** Variables ***
+@{list}    99    98    97    96
+${index}    1
+${number}    95
+${search_number}    91
+${delete_number}    95
+${count_number}     99
+
+*** Keywords ***
+print
+    [Arguments]    ${item}
+    log   \n ${item}
+    log to console   \n ${item}
+        
+insert to the list
+
+    Insert Into List    ${list}   ${index}     ${number}
+    
+print the list
+    FOR    ${item}  IN    @{list}
+        log    ${item}
+        log to console    ${item}
+    END
+    
+search from list
+    #getting error when the ${search} is taken as an argument
+    
+    ${index}    Get Index From List    ${list}    ${search_number}    
+    run keyword if    ${index} != -1    print    value found in list     
+    ...    ELSE    print    value not found in list    
+    
+remove the value from list
+    
+    Remove Values From List    ${list}    ${delete_number} 
+    
+count of items
+    ${count}    Count Values In List    ${list}    ${count_number}   
+    print    ${count} 
+    
+update item 
+    set list value    ${list}    ${index}    ${number}
+
+       
+  

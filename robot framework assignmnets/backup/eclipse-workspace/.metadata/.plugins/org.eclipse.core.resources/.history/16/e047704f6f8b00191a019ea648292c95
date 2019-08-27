@@ -1,0 +1,26 @@
+*** Settings ***
+documentation    this file contains the use of string keywords
+library     String    
+
+*** Variables ***
+#${name}    GuRu GoWrI KruPa TeChNoLoGiEs
+
+*** Keywords ***
+To Lowercase
+    [Arguments]    ${name}
+    ${result}    Convert To Lowercase    ${name}
+    log to console    lowercase:${result}
+
+To Uppercase
+    [Arguments]    ${name}
+    ${result}    Convert To Uppercase    ${name}
+    log to console    uppercase:${result}
+    
+#check for Uppercase
+
+*** Test Cases ***
+Converting to Lowercase
+    To Lowercase    GuruNag
+    
+Converting to Uppercase
+    To Uppercase    GuruNag

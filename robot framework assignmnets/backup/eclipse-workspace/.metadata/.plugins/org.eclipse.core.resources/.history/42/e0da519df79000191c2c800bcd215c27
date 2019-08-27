@@ -1,0 +1,22 @@
+*** Settings ***
+Documentation    This file contains all the variables and keywords used in the project
+
+    
+
+Resource    Custom_keywords.robot
+Resource    ../../login_assignment/login_assignment_resource.robot
+
+*** Variables ***
+${PIM_loc}                    xpath = //a[@id='menu_pim_viewPimModule']/b
+${add_employee_loc}           css = a[id='menu_pim_addEmployee']
+${add_emp_FirstName_loc}      css = input[id='firstName']
+
+
+*** Keywords ***
+
+Login to OrangeHRM
+    Verify The Login Page
+    Enter Username
+    Enter Password
+    click on signin button
+    Verify Logged In Page

@@ -1,0 +1,22 @@
+*** Settings ***
+Documentation    this file contains the test cases used from resource file
+resource    assignment_list_resource.robot
+library    Collections
+*** Test Cases ***
+
+# list test cases
+    # insert to the list
+
+    # print the list    @{list}
+    
+    # search from list      
+    
+    # remove the value from list        
+            
+    # count of items    
+    
+    # update item   
+    
+test list
+    
+    remove the value from list test    ${list}    ${delete_number}

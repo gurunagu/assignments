@@ -1,0 +1,5 @@
+*** Settings ***
+Documentation    this file contains the test cases of the dictionary data structure
+resource    assignment_dictionary_resource.robot
+
+*** Test Cases ***

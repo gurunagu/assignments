@@ -1,0 +1,30 @@
+*** Settings ***
+Documentation    this file contains the keywords used in the project    
+
+Resource    RFWSite_Variables.robot
+
+*** Keywords ***
+
+Open Browser And Open Google
+    Open Browser    ${url}    ${browser}
+    Maximize Browser Window
+    
+Search Robot Framework
+    Wait Until Element Is Visible    ${google_search_locator}   
+    Element Should Be Visible        ${google_search_locator}   
+    Click Element                    ${google_search_locator}
+    Clear Element Text               ${google_search_locator}
+    Input Text                       ${google_search_locator}    ${input_RFW}
+    Click Element                    ${search_button_locator}
+    Wait Until Element Is Visible    ${google_img_locator}   
+    Page Should Contain Image        ${google_img_locator}         
+
+Robot Framework Click Link
+    Wait Until Element Is Visible    ${RFW_link_locator}
+    Element Should Be Visible        ${RFW_link_locator}
+    Click Element                    ${RFW_link_locator} 
+    Wait Until Element Is Visible    ${RFW_img_locator}
+    
+             
+              
+    

@@ -1,0 +1,16 @@
+*** Settings ***
+Documentation    this file has the test cases of the table 
+
+Suite Setup       Open Brower And Open Page
+Suite Teardown    Close The Browser
+
+Resource    ../keywords/OrangeHRM_user_Keywords.robot
+
+
+*** Test Cases ***
+
+OrangeHRM Test Cases
+    login to OrangeHRM
+    Create New User
+    Fill New User Form
+    Search The User

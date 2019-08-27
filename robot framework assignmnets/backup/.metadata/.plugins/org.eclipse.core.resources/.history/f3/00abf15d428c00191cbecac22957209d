@@ -1,0 +1,44 @@
+*** Settings ***
+Documentation    this file contains the resources of the dictionary data structure
+   
+library    Collections    
+
+*** Variables ***
+&{dictionary}    a=100    b=101    c=102    d=103
+${insert_key}    e
+${insert_value}    104
+${delete_key}    c
+${update_key}    a
+${update_value}    200
+${search_key}    f
+${search_value}    103
+
+*** Keywords ***
+Insert to dictionary
+    [Arguments]    ${test_dictionary}    ${key}     ${value}  
+    set to dictionary    ${test_dictionary}    ${key}     ${value}   
+    print     after Inserting '${key}'=${value} : ${test_dictionary}
+
+Print 
+    [Arguments]    ${message}
+    log    \n${message}\n
+    log to console    \n${message}\n
+      
+Delete from dictionary   
+    [Arguments]    ${dictionary}    ${key} 
+    Remove From Dictionary    ${dictionary}    ${key}
+    print     after deleting '${key}' : ${dictionary} 
+    
+update value based on key
+    [Arguments]    ${test_dictionary}    ${key}     ${value}  
+    set to dictionary    ${test_dictionary}    ${key}     ${value}   
+    print     after Inserting '${key}'=${value} : ${test_dictionary}
+    
+Search key 
+    [Arguments]    ${test_dictionary}     ${key}       
+    Dictionary Should Contain Key    ${dictionary}    ${key}    msg='${key}' key not found 
+
+Search value
+    [Arguments]    ${test_dictionary}     ${value}
+    Dictionary Should Contain Value    ${dictionary}    ${Value}    msg='${Value}' value not found 
+    

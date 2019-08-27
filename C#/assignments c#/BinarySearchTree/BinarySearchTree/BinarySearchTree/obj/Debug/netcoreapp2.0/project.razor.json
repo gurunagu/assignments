@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "c:\\Users\\gurunag.u\\Desktop\\Assignment\\BinarySearchTree\\BinarySearchTree\\BinarySearchTree\\BinarySearchTree.csproj",
+  "TargetFramework": "netcoreapp2.0",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

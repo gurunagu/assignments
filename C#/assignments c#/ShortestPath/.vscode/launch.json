@@ -1,0 +1,24 @@
+{
+
+        "version": "0.2.0",
+        "configurations": [
+             {
+                 "name": ".NET Core Launch (console)",
+                 "type": "coreclr",
+                 "request": "launch",
+                 "preLaunchTask": "build",
+                 "program": "${workspaceFolder}/ShortestPath/ShortestPath//bin/Debug/netcoreapp2.0/ShortestPath.dll",
+                 "args": [],
+                 "cwd": "${workspaceFolder}/ShortestPath/ShortestPath/",
+                 "console": "externalTerminal",
+                 "stopAtEntry": false,
+                 "internalConsoleOptions": "openOnSessionStart"
+             },
+             {
+                 "name": ".NET Core Attach",
+                 "type": "coreclr",
+                 "request": "attach",
+                 "processId": "${command:pickProcess}"
+             }
+         ]
+     }

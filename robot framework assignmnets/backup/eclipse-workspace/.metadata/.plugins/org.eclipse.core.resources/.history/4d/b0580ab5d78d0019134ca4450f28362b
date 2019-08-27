@@ -1,0 +1,26 @@
+*** Settings ***
+Resource    ToolsQA2_libraries.robot
+
+*** Keywords ***
+
+Open The Browser
+    Open Browser    ${url}    ${browser}
+    Maximize Browser Window
+    
+Verify Page Open
+    Wait Until Element Is Visible    ${pagetest_locator} 
+    Page Should Contain Element      ${pagetest_locator}
+    
+Text Input
+    [Arguments]    
+    ...        ${locator}
+    ...        ${value}
+    Wait Until Element Is Visible    ${locator}
+    Click Element                    ${locator} 
+    Clear Element Text    ${locator}
+    Input Text    ${locator}    ${value}
+    
+
+    
+  
+   

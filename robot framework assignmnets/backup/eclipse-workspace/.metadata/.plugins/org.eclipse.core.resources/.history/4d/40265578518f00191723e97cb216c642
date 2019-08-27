@@ -1,0 +1,54 @@
+*** Settings ***
+Documentation    this file contains the keywords used in th eproject
+
+Resource    ../libraries/OrangeHRM_user_libraries.robot
+Resource    ../../login_assignment/login_assignment_resource.robot
+
+*** Keywords *** 
+Element Fill
+    [Arguments]           ${loc}    ${text}
+    Element click         ${loc}
+    Clear Element Text    ${loc}
+    Input Text            ${loc}    ${text}
+
+login to OrangeHRM
+    Verify The Login Page
+    Enter Username
+    Enter Password
+    click on signin button
+    Verify Logged In Page
+    
+Create New User
+    Element click    ${Admin_option_locator}
+    Element click    ${user_management_loc}
+    Element click    ${Users_Locator}
+    #Element click    ${add_user_locator}
+    
+Fill New User Form
+    Select From List By Index    ${user_role_loc}           ${user_role_index}
+    Element Fill                 ${employee_name_loc}       ${employeename}
+    Element Fill                 ${username_loc}            ${new_username}   
+    Select From List By Index    ${status_loc}              ${status_role_index}
+    Element Fill                 ${password_loc}            ${new_password}  
+    Element Fill                 ${confirm_password_loc}    ${new_password}
+    Element click                ${save_button_loc} 
+    
+Search The User
+    Element Fill                 ${search_username_loc}         ${new_username}
+    Select From List By Index    ${search_user_role_loc}        ${search_user_role_index}
+    Element Fill                 ${search_employee_name_loc}    ${employeename}
+    Select From List By Index    ${search_status_loc}           ${search_status_role_index}
+    Element click                ${search_button_loc}
+    Element Should Contain       ${Search_value_in_table_loc}    ${new_username}       
+    
+Delete The User
+    Page Should Contain Checkbox       ${search_checkbox_locator}
+    Checkbox Should Not Be Selected    ${search_checkbox_locator}
+    Select Checkbox                    ${search_checkbox_locator}
+    Checkbox Should Be Selected        ${search_checkbox_locator}
+    Element click                      ${delete_button_loc} 
+    Element click                      ${delete_ok_button_loc}
+   
+    
+    
+    

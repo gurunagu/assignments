@@ -1,0 +1,20 @@
+*** Settings ***
+Documentation    This file contains the customized common keywords used in the project
+
+Library    SeleniumLibrary
+
+Resource    OrangeHRM_Employee_Keywords.robot
+
+*** Keywords ***
+Clear And Enter In Input Text
+    [Arguments]           ${loc}    ${text}
+    Click On Element      ${loc}
+    Clear Element Text    ${loc}
+    Input Text            ${loc}    ${text}
+    
+Select From DropDown With Value
+    [Arguments]    
+    ...    ${loc}
+    ...    ${label}
+    Element Should Be Visible         ${loc}   
+    Select From List By Label         ${loc}           ${label}

@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+
+public class UnSafeCast
+{
+    public static void Main()
+    {
+        int x = 0;
+        while (x != 1)
+        {
+            Console.WriteLine("2 nos");
+            string a = Console.ReadLine();
+            string b = Console.ReadLine();
+
+            Console.WriteLine(multiply(a, b));
+
+            Console.WriteLine("1 to exit");
+            x = int.Parse(Console.ReadLine());
+        }
+        Console.ReadLine();
+    }
+    public static string multiply(string num, string res)
+    {
+        double temp = 0;
+        int carry = 0;
+        string max = (num.Length > res.Length) ? num : res;
+        string min = (num.Length > res.Length) ? res : num;
+        string result = string.Empty;
+        for (int i = max.Length - 1; i >= 0; i--)
+        {
+            
+            temp = int.Parse(max[i].ToString()) * int.Parse(min);
+            temp = temp + carry;
+            result = (temp % 10) + result;
+            Console.WriteLine(carry + "  " + result + "  " + temp);
+            carry = (int)temp / 10;
+            if (i == 0)
+            {
+                if (result.Length == max.Length)
+                {
+                    result = carry + result;
+                }
+                else
+                {
+                    result = (carry + int.Parse((result[0]).ToString())).ToString() + result.Substring(1);
+
+                }
+
+            }
+
+        }
+        return result;
+    }
+
+}

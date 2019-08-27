@@ -1,0 +1,14 @@
+*** Settings ***
+Documentation    this file contains the libraries and variables used in the project
+
+Library    SeleniumLibrary
+
+*** Variables ***
+${url}                            http://www.globalsqa.com/demo-site/frames-and-windows/#Open%20New%20Tab
+${browser}                        gc 
+${verify_locator}                 xpath = //div[@class='page_heading']/h1
+${text_to_be_located}             Frames And Windows
+${iframe_tab_locator}             css = li[id='iFrame']
+${email}                          test@test.com
+${email_locator}                  css = input[type='email']
+${subscribe_locator}              css = input[type='submit']

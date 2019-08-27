@@ -1,0 +1,32 @@
+*** Settings ***
+Documentation    this file contains the keywords used in th eproject
+
+Resource    ../libraries/OrangeHRM_user_libraries.robot
+Resource    ../../login_assignment/login_assignment_resource.robot
+
+*** Keywords *** 
+Element Fill
+    [Arguments]           ${loc}    ${text}
+    Element click         ${loc}
+    Clear Element Text    ${loc}
+    Input Text            ${loc}    ${text}
+
+login to OrangeHRM
+    Verify The Login Page
+    Enter Username
+    Enter Password
+    click on signin button
+    Verify Logged In Page
+    
+Create New User
+    Element click    ${Users_Locator}
+    Element click    ${add_user_locator}
+    
+Fill New User Form
+    Select From List By Index    ${user_role_loc}           ${user_role_index}
+    Element Fill                 ${employee_name_loc}       ${employeename}
+    Element Fill                 ${username_loc}            ${username}   
+    Select From List By Index    ${status_loc}              ${status_role_index}
+    Element Fill                 ${password_loc}            ${password}  
+    Element Fill                 ${confirm_password_loc}    ${password}  
+    

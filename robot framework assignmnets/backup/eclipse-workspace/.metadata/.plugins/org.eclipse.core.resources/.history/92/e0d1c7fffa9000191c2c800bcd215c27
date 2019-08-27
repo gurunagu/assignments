@@ -1,0 +1,52 @@
+*** Settings ***
+Documentation    This file contains all the variables and keywords used in the project
+
+    
+
+Resource    Custom_keywords.robot
+
+
+*** Variables ***
+${PIM_loc}                                  xpath = //a[@id='menu_pim_viewPimModule']/b
+${add_employee_loc}                         css = a[id='menu_pim_addEmployee']
+${add_employee_page_loc}                    xpath = //div[@class='head']/h1
+${add_emp_FirstName_loc}                    css = input[id='firstName']
+${first_name}                               ${empty}
+${add_emp_LastName_loc}                     css = input[id='lastName']
+${last_name}                                ${empty}
+${Add_employee_Employee_id_loc}             css = input[name='employeeId']
+${Employee_id}                              ${empty}   
+${add_employee_save_button}                 css = input[id='btnSave']
+
+
+*** Keywords ***
+
+Login to OrangeHRM
+    Verify The Login Page
+    Enter Username
+    Enter Password
+    click on signin button
+    Verify Logged In Page
+    
+Navigate And Verify Add Employee Form
+    Click On Element                    ${PIM_loc}
+    Click On Element                    ${PIM_loc}
+    Wait Until Element Is Visible       ${add_employee_page_loc}
+    ${result}    Run Keyword And Return Status    Element Should Be Visible    ${add_employee_page_loc}
+    Run Keyword If    ${result}==True 
+    ...    Print    Add Employee form succesfully loaded    ELSE
+    ...    Print    Add Employee form failed to load
+
+Setting A Temporary User Data
+    ${res}    Generate Random Sequence of size 10
+    Set Global Variable    ${first_name}    ${res}
+    ${res}    Generate Random Sequence of size 10
+    Set Global Variable    ${last_name}    ${res}         
+
+Filling Add Employee Form
+    Clear And Enter Input Text            ${add_emp_FirstName_loc}            ${first_name}
+    Clear And Enter Input Text            ${add_emp_LastName_loc}             ${last_name}
+    ${result}    Get Text                 ${Add_employee_Employee_id_loc}
+    Set Global Variable                   ${Employee_id}                      ${result}  
+
+             

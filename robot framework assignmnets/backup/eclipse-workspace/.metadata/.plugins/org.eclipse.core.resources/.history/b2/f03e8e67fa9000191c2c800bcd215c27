@@ -1,0 +1,39 @@
+*** Settings ***
+Documentation    This file contains all the variables and keywords used in the project
+
+    
+
+Resource    Custom_keywords.robot
+Resource    ../../login_assignment/login_assignment_resource.robot
+
+*** Variables ***
+${PIM_loc}                    xpath = //a[@id='menu_pim_viewPimModule']/b
+${add_employee_loc}           css = a[id='menu_pim_addEmployee']
+${add_employee_page_loc}      xpath = //div[@class='head']/h1
+${add_emp_FirstName_loc}      css = input[id='firstName']
+${first_name}                 ${empty}
+${add_emp_LastName_loc}       css = input[id='lastName']
+${last_name}                  ${empty}
+${Employee_id_loc}            css = input[name="employeeId"]
+${Employee_id}                ${empty}    
+
+
+*** Keywords ***
+
+Login to OrangeHRM
+    Verify The Login Page
+    Enter Username
+    Enter Password
+    click on signin button
+    Verify Logged In Page
+    
+Navigate To Add Employee Form
+    Click On Element                    ${PIM_loc}
+    Click On Element                    ${PIM_loc}
+    Wait Until Element Is Visible       ${add_employee_page_loc}
+    ${result}    Run Keyword And Return Status    Element Should Be Visible    ${add_employee_page_loc}
+    Run Keyword If    ${result}==True 
+    ...    Print    Add Employee form succesfully loaded    ELSE
+    ...    Print    Add Employee form failed to load
+
+             

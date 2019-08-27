@@ -1,0 +1,32 @@
+*** Settings ***
+Documentation    this file contains the resources that are used in the project.
+
+*** Variables ***
+
+
+
+*** Keywords ***
+print data
+    [Arguments]    ${message}
+    log    ${message}
+    Log To Console    ${message}       
+    
+positional keywords
+    [Arguments]    ${brand}    ${phone_model}    ${os}
+    log to console    \n
+    print data    ${brand}
+    print data    ${phone_model}
+    print data    ${os}
+    
+default keywords
+    [Arguments]    ${brand}    ${phone_model}    ${os}=android
+    print data    brand:${brand}
+    print data    ${phone_model}
+    print data    ${os}
+    
+named keywords
+    [Arguments]    ${brand}    ${phone_model}    ${os}=android
+    print data    ${brand}
+    print data    ${phone_model}
+    print data    ${os}
+    

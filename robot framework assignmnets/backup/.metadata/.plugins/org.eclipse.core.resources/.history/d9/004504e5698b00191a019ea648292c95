@@ -1,0 +1,18 @@
+*** Settings ***
+Documentation    this file contains resources of the project
+library    String
+
+*** Variables ***
+${name}    Guru GOWRI kruPa TechnoloGieS
+
+
+*** Keywords ***
+
+print data
+    [arguments]    ${message}
+    log    ${message}
+    Log To Console   ${message}   
+To Lowercase
+     ${result}    convert to Lowercase    ${name}
+     print data    ${result}
+     

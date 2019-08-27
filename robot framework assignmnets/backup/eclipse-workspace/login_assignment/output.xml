@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1 (Python 3.7.0 on win32)" generated="20190613 05:32:35.307" rpa="false">
+<suite id="s1" name="Login Assignment" source="C:\Users\Gurunag.U\eclipse-workspace\login_assignment">
+<suite id="s1-s1" name="Login Assignment Testsuite" source="C:\Users\Gurunag.U\eclipse-workspace\login_assignment\login_assignment_testsuite.robot">
+<test id="s1-s1-t1" name="Login Verification">
+<kw name="Open Brower And Open Page" library="login_assignment_resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190613 05:32:36.356" level="INFO">Opening browser 'gc' to base url 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20190613 05:32:36.355" endtime="20190613 05:32:42.757"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190613 05:32:42.759" endtime="20190613 05:32:43.948"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:32:36.353" endtime="20190613 05:32:43.949"></status>
+</kw>
+<kw name="Verify The Login Page" library="login_assignment_resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${loginpage_locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190613 05:32:43.951" endtime="20190613 05:32:44.026"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>${loginpage_locator}</arg>
+</arguments>
+<msg timestamp="20190613 05:32:44.049" level="INFO">Current page contains element 'css = div[id='logInPanelHeading']'.</msg>
+<status status="PASS" starttime="20190613 05:32:44.027" endtime="20190613 05:32:44.049"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:32:43.950" endtime="20190613 05:32:44.050"></status>
+</kw>
+<kw name="Enter Username" library="login_assignment_resource">
+<kw name="Element click" library="login_assignment_resource">
+<arguments>
+<arg>${username_locator}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190613 05:32:44.053" endtime="20190613 05:32:44.116"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190613 05:32:44.118" level="INFO">Clicking element 'css = input[name='txtUsername']'.</msg>
+<status status="PASS" starttime="20190613 05:32:44.117" endtime="20190613 05:32:44.241"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:32:44.052" endtime="20190613 05:32:44.242"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${username_locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190613 05:32:44.243" endtime="20190613 05:32:44.323"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${username_locator}</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20190613 05:32:44.324" level="INFO">Typing text 'Admin' into text field 'css = input[name='txtUsername']'.</msg>
+<status status="PASS" starttime="20190613 05:32:44.323" endtime="20190613 05:32:44.464"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:32:44.051" endtime="20190613 05:32:44.465"></status>
+</kw>
+<kw name="Enter Password" library="login_assignment_resource">
+<kw name="Element click" library="login_assignment_resource">
+<arguments>
+<arg>${password_locator}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190613 05:32:44.469" endtime="20190613 05:32:44.528"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190613 05:32:44.530" level="INFO">Clicking element 'css = input[name='txtPassword']'.</msg>
+<status status="PASS" starttime="20190613 05:32:44.529" endtime="20190613 05:32:44.634"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:32:44.467" endtime="20190613 05:32:44.635"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>${password_locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190613 05:32:44.636" endtime="20190613 05:32:44.706"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password_locator}</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20190613 05:32:44.708" level="INFO">Typing text 'admin123' into text field 'css = input[name='txtPassword']'.</msg>
+<status status="PASS" starttime="20190613 05:32:44.707" endtime="20190613 05:32:44.850"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:32:44.466" endtime="20190613 05:32:44.851"></status>
+</kw>
+<kw name="click on signin button" library="login_assignment_resource">
+<kw name="Element click" library="login_assignment_resource">
+<arguments>
+<arg>${signin_button_locator}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<status status="PASS" starttime="20190613 05:32:44.856" endtime="20190613 05:32:44.915"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20190613 05:32:44.917" level="INFO">Clicking element 'css = [name='Submit']'.</msg>
+<status status="PASS" starttime="20190613 05:32:44.916" endtime="20190613 05:32:48.128"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:32:44.854" endtime="20190613 05:32:48.130"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:32:44.852" endtime="20190613 05:32:48.131"></status>
+</kw>
+<kw name="Verify Logged In Page" library="login_assignment_resource">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Element Should Be Visible</arg>
+<arg>${Welcome_admin_locator}</arg>
+</arguments>
+<assign>
+<var>${message}</var>
+</assign>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${Welcome_admin_locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190613 05:33:00.198" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190613 05:32:54.163" endtime="20190613 05:33:00.199"></status>
+</kw>
+<msg timestamp="20190613 05:33:00.201" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190613 05:33:00.246" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190613 05:32:48.137" endtime="20190613 05:33:00.248"></status>
+</kw>
+<msg timestamp="20190613 05:33:00.249" level="INFO">${message} = False</msg>
+<status status="PASS" starttime="20190613 05:32:48.135" endtime="20190613 05:33:00.250"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${message} == True</arg>
+<arg>Print</arg>
+<arg>Valid Login</arg>
+<arg>ELSE</arg>
+<arg>Print</arg>
+<arg>Login failed</arg>
+</arguments>
+<kw name="Print" library="login_assignment_resource">
+<arguments>
+<arg>Login failed</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<msg timestamp="20190613 05:33:00.260" level="INFO">
+Login failed
+</msg>
+<status status="PASS" starttime="20190613 05:33:00.259" endtime="20190613 05:33:00.261"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${message}\n</arg>
+</arguments>
+<status status="PASS" starttime="20190613 05:33:00.262" endtime="20190613 05:33:00.265"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:33:00.254" endtime="20190613 05:33:00.266"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:33:00.251" endtime="20190613 05:33:00.267"></status>
+</kw>
+<status status="PASS" starttime="20190613 05:32:48.133" endtime="20190613 05:33:00.268"></status>
+</kw>
+<kw name="Logout" library="login_assignment_resource">
+<kw name="Element click" library="login_assignment_resource">
+<arguments>
+<arg>${Welcome_admin_locator}</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190613 05:33:12.301" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190613 05:33:06.290" endtime="20190613 05:33:12.302"></status>
+</kw>
+<msg timestamp="20190613 05:33:12.303" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190613 05:33:12.309" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<status status="FAIL" starttime="20190613 05:33:00.273" endtime="20190613 05:33:12.310"></status>
+</kw>
+<status status="FAIL" starttime="20190613 05:33:00.271" endtime="20190613 05:33:12.311"></status>
+</kw>
+<status status="FAIL" starttime="20190613 05:33:00.269" endtime="20190613 05:33:12.312"></status>
+</kw>
+<status status="FAIL" starttime="20190613 05:32:36.350" endtime="20190613 05:33:12.313" critical="yes">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</status>
+</test>
+<doc>this file contains the login test cases</doc>
+<status status="FAIL" starttime="20190613 05:32:35.518" endtime="20190613 05:33:12.316"></status>
+</suite>
+<status status="FAIL" starttime="20190613 05:32:35.429" endtime="20190613 05:33:12.327"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Login Assignment">Login Assignment</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Login Assignment Testsuite">Login Assignment.Login Assignment Testsuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190613 05:33:00.201" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+<msg timestamp="20190613 05:33:12.303" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 6.3.9600 x86_64)
+</msg>
+</errors>
+</robot>

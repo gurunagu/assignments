@@ -1,0 +1,28 @@
+*** Settings ***
+Documentation    this file contains the keywords used in th eproject
+
+Resource    ../libraries/OrangeHRM_user_libraries.robot
+Resource    ../../login_assignment/login_assignment_resource.robot
+
+*** Keywords ***
+
+Open The Browser
+    Open Browser    ${url}   ${browser}
+    Maximize Browser Window
+    Set Browser Implicit Wait    ${timeout}
+    
+Print
+    [Arguments]       ${message}
+    log               ${message}
+    Log To Console    ${message}
+    
+closing the browser
+    Sleep     ${timeout}
+    Close Browser 
+    
+login to OrangeHRM
+    Verify The Login Page
+    Enter Username
+    Enter Password
+    click on signin button
+    Verify Logged In Page

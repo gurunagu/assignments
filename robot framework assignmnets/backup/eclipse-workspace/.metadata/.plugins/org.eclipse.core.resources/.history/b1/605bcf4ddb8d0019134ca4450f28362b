@@ -1,0 +1,13 @@
+*** Settings ***
+Resource    ToolsQA2_keywords.robot
+
+
+
+*** Test Cases ***
+
+test
+    Open The Browser
+    Verify Page Open
+    Text Input    ${firstname_locator}    ${firstname}
+    Text Input    ${lastname_locator}     ${lastname}
+    Text Input    ${date_locator}         ${date}

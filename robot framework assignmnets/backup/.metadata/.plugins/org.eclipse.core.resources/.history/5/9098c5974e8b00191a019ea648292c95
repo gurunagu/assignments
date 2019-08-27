@@ -1,0 +1,21 @@
+*** Settings ***
+Documentation    this file contains of open and close browser scenario.
+
+Library     SeleniumLibrary    
+
+*** Variables ***
+${url}    https://www.google.com/
+${browser}    gc
+${width}    960
+${height}       540 
+${text_locator}    name="q"   
+
+*** Test Cases ***
+open the browser
+    open browser     ${url}    ${browser}
+    Set Window Size    ${width}    ${height}
+    sleep     5s
+    Maximize Browser Window
+    sleep     5s
+    input text    ${text_locator}    robotframework
+    Close Browser

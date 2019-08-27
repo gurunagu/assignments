@@ -1,0 +1,20 @@
+*** Settings ***
+Documentation    this file contains the keywords used in th eproject
+
+Resource    ../variables/ToolsQA_table_variables.robot
+
+*** Keywords ***
+
+Open The Browser
+    Open Browser    ${url}   ${browser}
+    #Maximize Browser Window
+    Set Browser Implicit Wait    5s
+   
+Country Col Values
+    Wait Until Element Is Visible    ${Country_locator}
+    FOR    ${index}     IN RANGE    2    5
+        ${res}     Get Table Cell    ${Country_locator}    ${index}    2
+    END
+       
+    
+    log    ${res}        

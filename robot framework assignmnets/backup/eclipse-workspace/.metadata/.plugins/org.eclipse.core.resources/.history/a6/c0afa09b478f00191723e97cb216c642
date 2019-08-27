@@ -1,0 +1,10 @@
+*** Settings ***
+Documentation    this file contains the libraries and variables used in the project
+
+Library    SeleniumLibrary
+
+*** Variables ***
+
+${timeout}                        10s
+${Admin_option_locator}           xpath = //a[@id='menu_admin_viewAdminModule']/b
+${Users_Locator}                  //a[@id='menu_admin_viewSystemUsers']
